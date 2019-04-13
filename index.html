@@ -1,0 +1,1923 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:#E3EFFF;
+}
+
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #4863A0;}
+
+#maintitle {
+position:absolute;
+background-color:#39506F;
+width:50%;
+height:4%;
+top:0%;
+left:25%;
+font-family: 'Satisfy', cursive;
+color:#FFFFFF;
+text-align:center;
+font-size:2.7vh;
+line-height:1.5;
+letter-spacing:5px;
+}
+
+#bannerpic {
+position:absolute;
+background-color:#FFFFFF;
+width:50%;
+height:40%;
+top:4%;
+left:25%;
+}
+
+#bannericon1 {
+position:absolute;
+background-color:#F7FFFF;
+border:1px solid #39506F;
+width:3%;
+height:6%;
+top:10%;
+left:60%;
+background-image: url('https://i.imgur.com/eczgCm0.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#bannericon2 {
+position:absolute;
+background-color:#F7FFFF;
+border:1px solid #39506F;
+width:3%;
+height:6%;
+top:10%;
+left:64%;
+background-image: url('https://i.imgur.com/PmZ5v0X.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#bannericon3 {
+position:absolute;
+background-color:#F7FFFF;
+border:1px solid #39506F;
+width:3%;
+height:6%;
+top:10%;
+left:68%;
+background-image: url('https://i.imgur.com/eCdCJDu.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #BBC7D7;
+  color: #F7FFFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #BBC7D7 transparent transparent transparent;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+#flavortext {
+position:absolute;
+background-color:#E3EFFF;
+border:1px solid #39506F;
+padding:1%;
+width:9%;
+height:17%;
+top:18%;
+left:60%;
+text-align:justify;
+color:#4863A0;
+font-size:1.2vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#tabarea {
+position:absolute;
+background-color:#D9E5F5;
+width:50%;
+height:4%;
+top:44%;
+left:25%;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:#89A0BF;
+border:1px solid #39506F;
+border-radius:100%;
+width:2.5%;
+height:60%;
+top:16.5%;
+left:33%;
+}
+
+#tabbox2 {
+position:absolute;
+background-color:#89A0BF;
+border:1px solid #39506F;
+border-radius:100%;
+width:2.5%;
+height:60%;
+top:16.5%;
+left:43%;
+}
+
+#tabbox3 {
+position:absolute;
+background-color:#89A0BF;
+border:1px solid #39506F;
+border-radius:100%;
+width:2.5%;
+height:60%;
+top:16.5%;
+left:53%;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#89A0BF;
+border:1px solid #39506F;
+border-radius:100%;
+width:2.5%;
+height:60%;
+top:16.5%;
+left:63%;
+}
+
+#container1 {
+position:absolute;
+background-color:#EDF9FF;
+width:50%;
+height:52%;
+top:48%;
+left:25%;
+}
+
+#content {
+position:absolute;
+background-color:#FFFFFF;
+border:1px solid #39506F;
+padding:2%;
+overflow:auto;
+width:29%;
+height:35.3%;
+top:50%;
+left:26%;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+font-size:1.5vh;
+}
+
+#pic {
+position:absolute;
+width:14%;
+height:44%;
+top:50%;
+left:60%;
+}
+
+#creditbar {
+position:absolute;
+background-color:#39506F;
+width:50%;
+height:4%;
+top:96%;
+left:25%;
+text-align:center;
+font-size:1.1vh;
+font-family: 'Old Standard TT', serif;
+color:#FFFFFF;
+line-height:4;
+}
+
+#friendsarea {
+position:absolute;
+width:25%;
+height:100%;
+top:0%;
+left:75%;
+}
+
+#friendsareatitle {
+position:absolute;
+background-color:#576E8D;
+width:25%;
+height:4%;
+top:0%;
+left:75%;
+font-family: 'Old Standard TT', serif;
+color:#FFFFFF;
+text-align:center;
+font-size:2vh;
+text-transform:uppercase;
+line-height:2.2;
+}
+
+#friendbox1 {
+position:absolute;
+background-color:#D9E5F5;
+padding:5%;
+width:70%;
+height:18.5%;
+top:9%;
+left:10%;
+}
+
+#friendbox2 {
+position:absolute;
+background-color:#D9E5F5;
+padding:5%;
+width:70%;
+height:18.5%;
+top:38%;
+left:10%;
+}
+
+#friendbox3 {
+position:absolute;
+background-color:#D9E5F5;
+padding:5%;
+width:70%;
+height:18.5%;
+top:67%;
+left:10%;
+}
+
+#friendpic {
+position:absolute;
+background-color:#39506F;
+width:20%;
+height:35%;
+}
+
+#nametitle {
+position:absolute;
+background-color:#39506F;
+width:28%;
+height:10%;
+top:11%;
+left:32%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.3;
+font-size:2vh;
+}
+
+#friendname {
+position:absolute;
+background-color:#89A0BF;
+width:34.2%;
+height:10%;
+top:11%;
+left:60%;
+text-align:center;
+color:#000000;
+font-size:1.3vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:2.3;
+}
+
+#relationtitle {
+position:absolute;
+background-color:#39506F;
+width:28%;
+height:10%;
+top:23.9%;
+left:32%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.3;
+font-size:2vh;
+}
+
+#friendrelation {
+position:absolute;
+background-color:#89A0BF;
+width:34.2%;
+height:10%;
+top:23.9%;
+left:60%;
+text-align:center;
+color:#000000;
+font-size:1.3vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:2.3;
+}
+
+#accounttitle {
+position:absolute;
+background-color:#39506F;
+width:28%;
+height:10%;
+top:36.5%;
+left:32%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.3;
+font-size:2vh;
+}
+
+#friendaccount {
+position:absolute;
+background-color:#89A0BF;
+width:34.2%;
+height:10%;
+top:36.5%;
+left:60%;
+text-align:center;
+color:#000000;
+font-size:1.3vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:2.3;
+}
+
+#frienddescription {
+position:absolute;
+background-color:#89A0BF;
+padding:5%;
+overflow:auto;
+width:78%;
+height:17%;
+top:55%;
+text-align:justify;
+color:#000000;
+font-size:1.3vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#friendtabbar {
+position:absolute;
+background-color:#576E8D;
+width:25%;
+height:4%;
+top:96%;
+left:75%;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#BBC7D7;
+border:1px solid #D9E5F5;
+border-radius:100%;
+width:4.5%;
+height:60%;
+top:16.5%;
+left:33%;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#BBC7D7;
+border:1px solid #D9E5F5;
+border-radius:100%;
+width:4.5%;
+height:60%;
+top:16.5%;
+left:43%;
+}
+
+#tabbox7 {
+position:absolute;
+background-color:#BBC7D7;
+border:1px solid #D9E5F5;
+border-radius:100%;
+width:4.5%;
+height:60%;
+top:16.5%;
+left:53%;
+}
+
+#tabbox8 {
+position:absolute;
+background-color:#BBC7D7;
+border:1px solid #D9E5F5;
+border-radius:100%;
+width:4.5%;
+height:60%;
+top:16.5%;
+left:63%;
+}
+
+#basictitle {
+position:absolute;
+background-color:#576E8D;
+width:25%;
+height:4%;
+top:0%;
+left:0%;
+font-family: 'Old Standard TT', serif;
+color:#FFFFFF;
+text-align:center;
+font-size:2vh;
+text-transform:uppercase;
+line-height:2.2;
+}
+
+#statname1 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:2.5%;
+top:9%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat1 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:7%;
+top:9%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#statname2 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:2.5%;
+top:14%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat2 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:7%;
+top:14%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#statname3 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:2.5%;
+top:19%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat3 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:7%;
+top:19%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#statname4 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:2.5%;
+top:24%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat4 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:7%;
+top:24%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#statname5 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:13%;
+top:9%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat5 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:17.5%;
+top:9%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#statname6 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:13%;
+top:14%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat6 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:17.5%;
+top:14%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#statname7 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:13%;
+top:19%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat7 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:17.5%;
+top:19%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#statname8 {
+position:absolute;
+background-color:#89A0BF;
+width:4.5%;
+height:3%;
+left:13%;
+top:24%;
+text-align:center;
+color:#E3EFFF;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+line-height:1.6;
+font-size:2vh;
+}
+
+#stat8 {
+position:absolute;
+background-color:#D9E5F5;
+width:5%;
+height:3%;
+left:17.5%;
+top:24%;
+text-align:center;
+color:#000000;
+font-size:1.7vh;
+font-family: 'Josefin Sans', sans-serif;
+line-height:1.9;
+}
+
+#details {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#C5D1E1;
+width:18%;
+height:55%;
+top:32%;
+left:2.5%;
+text-align:justify;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#detailtitle {
+position:absolute;
+background-color:#576E8D;
+width:25%;
+height:4%;
+top:96%;
+left:0%;
+font-family: 'Old Standard TT', serif;
+color:#FFFFFF;
+text-align:center;
+font-size:2vh;
+text-transform:uppercase;
+line-height:2.2;
+}
+
+.tabs{
+display:block;
+opacity:0;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22,#tab23,#tab24,#tab25,#tab26,#tab27,#tab28,#tab29,#tab30,#tab31,#tab32,#tab33,#tab34,#tab35,#tab36,#tab37,#tab38,#tab39,#tab40,#tab41,#tab42,#tab43,#tab44,#tab45,#tab46,#tab47,#tab48,#tab49,#tab50,#tab51,#tab52,#tab53,#tab54,#tab55,#tab56 {
+display: none;
+}
+
+a {
+color:#617897;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#39506F;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+h1 {
+color: #FFFFFF;
+background-color:#39506F;
+border-left:10px solid #617897;
+border-right:10px solid #617897;
+font-family: 'Satisfy', cursive;
+text-align:center;
+font-size: 2.2vh;
+}
+
+i {
+color:#666666;
+}
+
+b {
+color:#39506F;
+font-family: 'Acme', sans-serif;
+</style>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur830.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Old+Standard+TT|Satisfy" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('bannerpic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('tabarea').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('pic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation4(id) {document.getElementById('friendsareatitle').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation5(id) {document.getElementById('friendsarea').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="basictitle">
+⤥ Basic Information ⤦
+</div>
+<div id="statname1">
+Name:
+</div>
+<div id="stat1">
+X
+</div>
+<div id="statname2">
+P. Age:
+</div>
+<div id="stat2">
+Late 20's
+</div>
+<div id="statname3">
+Gender:
+</div>
+<div id="stat3">
+Female
+</div>
+<div id="statname4">
+Height:
+</div>
+<div id="stat4">
+5'8"
+</div>
+<div id="statname5">
+Diction:
+</div>
+<div id="stat5">
+"Key"
+</div>
+<div id="statname6">
+T. Age:
+</div>
+<div id="stat6">
+Immortal
+</div>
+<div id="statname7">
+S.O.:
+</div>
+<div id="stat7">
+Demisexual
+</div>
+<div id="statname8">
+Weight:
+</div>
+<div id="stat8">
+130 lbs.
+</div>
+<div id="details">
+<h1>Appearance</h1>
+<b>Humanoid Form:</b> While fairly tall for the average modern female, the Wisp Queen's height does not entirely effect her overall image. Her figure is still very feminine with graciously voloptuous curves, but it is well hidden by her frail-looking body type. X's skin is almost as pale as her long thick hair that naturally hangs down to her lower back when left alone. Her facial structure is very regal, a sharp jaw and a small chin sets a nice frame, while a small nose and pink lips add a little bit of color to her. The irises of her eyes are only abnormal in the sense that they are such a dull blue they almost blend in with the whites of her eyeballs.
+<br><br>
+<b>Ethereal Form:</b> Technically the Healer remains the same height while in this form, she just floats a couple inches off of the ground making her look taller. The silhouette of her body remains, but rather than flesh and bone she is reduced to merely a thick white fog. While in this form her facial attributes are still present if one looks closely enough and her eyes give off an unnatural glow. 
+<br><br>
+<h1>Personality</h1>
+When first arriving at Ulreich University, X had set a very ambitious goal for herself. Afraid of growing too attached to her new environment--and its residents--she opted to fabricate a mask, appearing as hostile and short tempered as possible in order to effectively keep people at a distance. It didn’t prove to be much of a challenge at first, given that the entity already harbored a strong resentment for her employer, and the fact that grief made it easier to allow loss of self control over powerful emotions. Nonetheless her act went against her true nature, and eventually the Students she’d been forced to care for managed to crack through the cold facade.
+<br><br>
+No breakthrough could possibly compare to the reappearance of a long lost love. For thousands of years the Head Healer has assumed herself a widow (thanks to tragic circumstances from their shared past) only to be reunited with the only man she’d ever truly loved. X no longer had a reason to grieve, or be angry at the world, so in a matter of seconds her cruel mask was utterly destroyed. Now she is better described as a logical and calculating individual who thinks before acting, but doesn’t shy away from responsibility. Above all the Wisp Queen is loyal and compassionate. Make no mistake, she does have the capacity to be incredibly cold and cruel, but only to the rare few who have done something truly deserving of her wrath.
+</div>
+<div id="detailtitle">
+⤤ Detailed Information ⤣
+</div>
+
+<div id="maintitle">
+Queen Will o' the Wisp
+</div>
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/IaEf87P.png"/>
+</div>
+<div id="bannericon1"><div class="tooltip"><span class="tabs" onClick="changeNavigation ('tab21');changeNavigation1 ('tab22');changeNavigation2 ('tab23');changeNavigation3 ('tab24')"><img style="width:100%;height:100%;opacity:0;" src="https://i.imgur.com/eczgCm0.png"/></span>
+<span class="tooltiptext">The Past</span>
+</div>
+</div>
+<div id="bannericon2"><div class="tooltip"><span class="tabs" onClick="changeNavigation ('tab25');changeNavigation1 ('tab26');changeNavigation2 ('tab27');changeNavigation3 ('tab28')"><img style="width:100%;height:100%;opacity:0;" src="https://i.imgur.com/eczgCm0.png"/></span>
+<span class="tooltiptext">The Present</span>
+</div>
+</div>
+<div id="bannericon3"><div class="tooltip"><span class="tabs" onClick="changeNavigation ('tab29');changeNavigation1 ('tab30');changeNavigation2 ('tab31');changeNavigation3 ('tab32')"><img style="width:100%;height:100%;opacity:0;" src="https://i.imgur.com/eczgCm0.png"/></span>
+<span class="tooltiptext">The Magic</span>
+</div>
+</div>
+<div id="flavortext">
+<b>❝</b> Ut <b>Luna</b> lumina nocte meus es <i>tu editi in tenebris</i>. Noster amor aemuli caloris <b>Solis</b>, <i>clarus et gloriosus in saecula</i>. <b>❞</b><br> <p align="right"><b>-</b> Lady X, <u>Wedding Vows Excerpt</u></p><br>[[ <i>Translation:</i> <FONT COLOR="#000000">As the Moon lights the night you are my beacon in the dark. Our love rivals the heat of the Sun, bright and glorious forever.</FONT> ]]
+</div>
+<div id="tabarea">
+<div id="tabbox1">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation2 ('tab10');changeNavigation3 ('tab11')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Shamanism</span>
+</div>
+</div>
+<div id="tabbox2">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab12');changeNavigation2 ('tab13');changeNavigation3 ('tab14')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Faith</span>
+</div>
+</div>
+<div id="tabbox3">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab15');changeNavigation2 ('tab16');changeNavigation3 ('tab17')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Spiritualism</span>
+</div>
+</div>
+<div id="tabbox4">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab18');changeNavigation2 ('tab19');changeNavigation3 ('tab20')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Inventory</span>
+</div>
+</div>
+</div>
+
+<div id="container1"></div>
+<div id="content">
+<h1>Archmage Mana Type: Spiritual Ease</h1>
+Now that her natural mana flows through her soul, it retains new qualities in addition to its old ones. While not a physical construct, her raw base mana has a more tangible form. It acts like a cushion, giving some resistance when pressure is applied. When in her ethereal form, especially since that form IS her soul, her mana gives her a more distinguishable shape, and allows her to semi-solidify the substance that makes up her ghostly body. It also still retains the natural healing qualities that come with Faith, meaning that if her natural mana comes in direct contact with a wounded individual, it can start healing minor wounds.
+<br><br>
+<h1>High Archmage Tree: Shamanism</h1>
+<b>Call of the Living</b><br>
+Congratulations, X has finally obtained the ability to revive students, now that she can combine aspects of both Faith and Spiritualism together into a whole new Tree! When a student's body is no longer capable of holding its spirit--basically they die--then X can weave her mana into the corpse. This act allows her to read everything she can about the passed on mage's identity, and collect all the information she needs to not only heal the body so it can live again, but also know which spirit in the vast number to call. After summoning the spirit belonging to the body back to where its dead flesh remains and giving it the choice to stay dead or return to life, she will then begin renewing the connection between both entities by healing the body so the spirit may successfully inhabit it once more!
+<br><br>
+<b>Diamond Dust</b><br>
+Using the special cushiony capabilities of Spiritual Ease as well as the incredible ward-making powers a Faith mage possesses, X can form up to seven smaller basketball sized spheres or two massive ones that can cover a six foot radius. While looking to be made of glass, the walls of these spheres are diamond grade and are actually magical wards that are able to reflect one spell of equal rank unless it's a charged spell (two of one rank below, three of two ranks below, etc.) and even works against spirit-based spells/spiritual beings. The distance the reflected spell can travel back in its original direction of trajectory depends on how powerful the spell is and how far it originally traveled. Spells of equal rank and higher distances won't travel back nearly as far as it originally traveled.
+<br>
+For an extra cost of mana, X can fill the insides of these spheres with condensed pent up Spiritual Ease so that when they are broken, they burst into ten-foot-radius explosions of pure force, strong enough to break other Titanium grade constructs/objects at point blank range. 
+<br>
+These orbs can be telepathically controlled within a thirty foot radius of the caster and can reach up to speeds of 100 MPH when shot off like projectiles. Once a Diamond Dust orb is shot like a projectile it cannot be telepathically controlled again unless it lands within the thirty foot radius or the caster approaches it to bring it back within the radius. When shot off, so long as they remain within the radius, they can be stopped and/or telepathically controlled once more.
+<br><br>
+<b>Shooting Star</b><br>
+When casting this spell, a soft glitter-like substance will fall like rain from ten feet above ground. This "rain" has two modes, the first being a Faith spell. Mages affected by the Faith mode, will have minor wounds quickly healed, and more major wounds if they stay under the spell for long enough time. Mages affected by the Spiritualism mode will be greeted with icy shards of Spirit Force. These shards are cold enough to cause burning of the skin if a mage is under the glitter for long enough. X is not only able to pick and choose which mages within the radius are affected by this spell, but she can also use both modes simultaneously for a much higher mana cost.
+<br><br>
+<b>Shaman's Dome</b><br>
+A solid barrier that manifests into the shape of a massive dome, capable of stretching up to twenty feet into the air and expanding to cover up to a thirty foot radius around the caster. At its base, the solidified material is diamond grade, but it contains an extra aura-like sheen over its surface that allows it to reflect one attack of equal rank back toward their source of projection at twice the speed they initially traveled (two of one rank lower, three of two ranks lower, anything lesser than High Mage will be reflected continuously). If an extra rotation is spent charging mana over the dome's surface, this reflective quality strengthens, allowing it to instead reflect up to two spells, or one singular charged spell, of equal rank (increases number of lower ranked spells that can be reflected by one as well) but this extra layer only covers one of four major sides of the dome (front/back/left/right) at a time when used, and only one extra layer can be used at once.<br>
+When this ability has been used up, the reflective nature will dissipate and leave the highly durable substance underneath exposed. Spells from enemies and allies may pass through the dome undeterred, as long as they are traveling from the inside to the outside (and firing through the side of the orb with the higher reflective power will weaken the accuracy of attacks passed through it).
+<br><br>
+<b>Arrows of a Vengeful Spirit</b><br>
+A typical two-foot long arrow construct that glows the same soft blue as her mana. This particular spell is a soul-seeking diamond grade arrow that can follow a target for up to ninety feet away from the caster. It takes two posts to form this construct (the first post charges and the second post casts) and once the arrow is shot it can continuously follow a target for up to four rotations (unless the target exceeds the ninety foot radius). Target must be visible to the caster in order for the arrow to lock on. When the arrow manages to collide with a surface the natural cushion-like pressure that the caster's archmage mana type possesses allows it to burst apart into a harsh force-based explosion that has a blast radius of twenty feet. At point blank range this blast is strong enough to shatter Diamond grade constructs and/or materials, but anything further than point blank would have to be at least Tungsten to be broken through.
+<br><br>
+<b>Healer's Gentle Touch</b><br>
+A powerful spell that allows the caster to completely heal up to two targets within a thirty foot radius of themself. Whether the ailment be natural or magical, even if the damage is done to the soul itself, it will be cured (so long as the damage is of equal or lower rank and she actually does have the ability to heal the ailments). This spell takes one post to charge and one post to cast, and while it can be used to cleanse infections/disperse harmful spells affecting the target it cannot be used to regenerate limbs or bring another being back to life.
+<br><br>
+<b>Serenity</b><br>
+The caster acts as a spiritual beacon, creating an attractive aura of shining Spirit Force around her body that will draw the attention of her Will-o'-the-Wisps like moths to a flame. She can gather up to four at once in order to use this spell to its full extent, each individual one possesses the same ability on its own.<br>
+When a Wisp is summoned and takes its place to complete the spell, it becomes enveloped in an ethereal glow and creates a pillar of luminescent cleansing energy, which stands ten feet tall and measures about two feet wide. Upon reaching completion of its formation (all this happening over the course of a few seconds) the pillar will quickly orbit the caster and slowly spiral outward increasing its radius of effect and distance of travel until it creates a consistent path in a fifty foot radius around her (lasts for five rotations and requires two to cool down before it can be cast again). Each individual pillar is capable of cleansing/dispersing one equal or lesser ranked harmful spell so long as it is in AoE form, and if all four are used at once it has the capacity to cleanse small bits of Corruption (traces within a thirty foot radius of the caster). <br>
+Serenity can remove the effect of an AoE spell within a 5 foot radius of the created pillar for as long as it exists; AoE's of Post HM class +2  can be nullified, but only if they have a flat affect and do not charge (Aoe's that gain power over time will break through this cleansing effect for a post + an additional rotation for every rank below you. Projectile spells of physical nature can be deflected by these pillars, being destroyed by constructs of high mage ranking or above, energy spells will be absorbed unless they are of equal power as the caster (hm class2). Mantaining these pillars drain mana over time, and absorbing AoE's and spells will drain even more mana the stronger the opponent. Having multiple active at once is a massive mana drainer. 
+<br><br>
+<b>Shaman's Pulse</b><br>
+The caster releases a pulse of pure energy into the air that expands out from her body and slowly travels to eventually reach eighty feet away from her (starts at forty for the first rotation, then sixty for the second, stopping at eighty for the third) that only remains present in the air for four rotations before dissipating. The energy itself is harmless but acts as a sensory field, feeding information to the caster's mind directly if any foreign mana signatures are active within its active radius. Whether this be a mage's mana pool, mana in a spell, or mana in artifacts such as mediums or enchanted items, etc, even if they are purposefully being hidden by magic and nonmagic means. However, there are some specific specifications included with the ability to see through magic intending to cloak or hide an individual. The spell can cut through hiding spells made by non deception/psionic mages if their spell is post hm class +1, but class +2 will not be affected. Deception or Psionic mages who have spells meant for anti-sensory (not just hiding) can bypass this with high mage level, and normal hiding illusions will work UNLESS in the caster's ACTUAL line of sight if they are post hm class 1. As it stands, deceptions of class +2 are impossible to break through, but the general area of a mage can be sensed upon their arrival into her field. <br>
+A second "option" or "mode" for this spell requires physical contact and for the pulse to be made through that physical contact specifically, into the body of the target. Confining this spell down to be pushed through a body will instead map out its inner workings and show any traces of damage anywhere within their physical existence as well as if there is damage done to their soul and mana pool. The secondary effect is also limited to the rules and mechanics described above for the primary effect (the stuff regarding seeing through magical cloaking).<br>
+Requires a two post cooldown after every use, no matter the mode used.
+</div>
+<div id="pic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RyjNjfD.png"/>
+</div>
+
+<div id="creditbar">
+© This template was coded by <a target="_blank" href="http://being.chatango.com"><FONT COLOR="#89A0BF">Being</FONT></a> for personal use, please do not redistribute or steal. None of the images used are owned by the coder, all rights to their respective owners. For image sources leave a message.
+</div>
+
+<div id="friendsarea">
+<div id="friendbox1">
+<div id="friendpic">
+<a target="_blank" href="http://philosopher.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/p/h/philosopher/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+Lord Z
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+Husband
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+Philosopher
+</div>
+<div id="frienddescription">
+Lady X's soulmate, whenever asked what the "best thing that ever happened to her" was she will always answer with his name. Their relationship is strong, withstanding the test of time and distance. It was his presumed death that caused her grief, and the surprise of his return that made it possible for the old Will-o'-the-Wisp to smile again. While his humble and compassionate nature often gets the man into compromising situations his wife doesn't seem to mind, she's just happy to protect and serve at his side.
+</div>
+</div>
+<div id="friendbox2">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+???
+</div>
+</div>
+<div id="friendbox3">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+???
+</div>
+</div>
+</div>
+<div id="friendsareatitle">
+Immediate Family
+</div>
+<div id="friendtabbar">
+<div id="tabbox5">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation4 ('tab1');changeNavigation5 ('tab2')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/8NdAWNl.png"/></span>
+<span class="tooltiptext">Family</span>
+</div>
+</div>
+<div id="tabbox6">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation4 ('tab3');changeNavigation5 ('tab4')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/8NdAWNl.png"/></span>
+<span class="tooltiptext">Friends</span>
+</div>
+</div>
+<div id="tabbox7">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation4 ('tab5');changeNavigation5 ('tab6')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/8NdAWNl.png"/></span>
+<span class="tooltiptext">Students</span>
+</div>
+</div>
+<div id="tabbox8">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation4 ('tab7');changeNavigation5 ('tab8')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/8NdAWNl.png"/></span>
+<span class="tooltiptext">Healers</span>
+</div>
+</div>
+</div>
+
+<div id="tab1">
+Immediate Family
+</div>
+<div id="tab2">
+<div id="friendbox1">
+<div id="friendpic">
+<a target="_blank" href="http://philosopher.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/p/h/philosopher/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+Lord Z
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+Husband
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+Philosopher
+</div>
+<div id="frienddescription">
+Lady X's soulmate, whenever asked what the "best thing that ever happened to her" was she will always answer with his name. Their relationship is strong, withstanding the test of time and distance. It was his presumed death that caused her grief, and the surprise of his return that made it possible for the old Will-o'-the-Wisp to smile again. While his humble and compassionate nature often gets the man into compromising situations his wife doesn't seem to mind, she's just happy to protect and serve at his side.
+</div>
+</div>
+<div id="friendbox2">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+???
+</div>
+</div>
+<div id="friendbox3">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+???
+</div>
+</div>
+</div>
+
+<div id="tab3">
+Closest Friends
+</div>
+<div id="tab4">
+<div id="friendbox1">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+This one's a surprise, can't put it in yet because of spoilers.
+</div>
+</div>
+<div id="friendbox2">
+<div id="friendpic">
+<a target="_blank" href="http://rune.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/r/u/rune/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+Rune
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+Confidant
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+Rune
+</div>
+<div id="frienddescription">
+While the Scribe's behavior and mannerisms aren't admired or appreciated by X she knows the reason behind her friend's behavior and tolerates it through a filter of understanding. The pair are very close; the Wisp feels she owes the woman an unpayable debt for directly helping her abscond from the Council. Rune feels the same way in return, for other reasons from ancient history.
+</div>
+</div>
+<div id="friendbox3">
+<div id="friendpic">
+<a target="_blank" href="http://fae.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/f/a/fae/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+Gossamer
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+Friend (Student)
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+Fae
+</div>
+<div id="frienddescription">
+While not a Healer or Faith mage herself, Gossamer has proven to be quite useful to the Head Healer. She's done a multitude of chores, going on missions for and with X, and even taking on multiple crafting projects. The Faerie has proven to be very capable with her hands, and a talented Enchantress, who was willing to drop everything on a dime to be as helpful as possible. At first the Healer just used this to her advantage, but eventually a true bond of friendship blossomed between them.
+</div>
+</div>
+</div>
+
+<div id="tab5">
+Honorable Students
+</div>
+<div id="tab6">
+<div id="friendbox1">
+<div id="friendpic">
+<a target="_blank" href="http://isaboedevlin.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/s/isaboedevlin/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+Isaboe Devlin
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+Student (Puppeteer)
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+IsaboeDevlin
+</div>
+<div id="frienddescription">
+While they haven't spent enough time together to really be "friends," Isaboe has still been nothing but a help to the old Wisp. Whenever X asked for a favor she was willing to deliver, and secrets have been shared between them, intended to preserve the Puppeteer's life and explain why she should proceed in her studies with caution. X believes the Devlin to be a smart capable mage, a student of Ulreich University who is bound to go far and do her teachers--and her family--proud.
+</div>
+</div>
+<div id="friendbox2">
+<div id="friendpic">
+<a target="_blank" href="http://defender.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/d/e/defender/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+Jackson Bello
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+Faith Student
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+Defender
+</div>
+<div id="frienddescription">
+A very young Faith Mage, the youngest present at Ulreich University, but by far the most talented. Jackson might as well be a prodigy, even if he doesn't really understand how to use his incredible talents yet. That's where X comes in, anyway. While he is pretty hard to control, full of spunk and energy, she finds his high spirits refreshing and takes pride in his progress. She has high hopes for his future and is excited to see more potential Healers in her medical ward.
+</div>
+</div>
+<div id="friendbox3">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+???
+</div>
+</div>
+</div>
+
+<div id="tab7">
+Notable Healers
+</div>
+<div id="tab8">
+<div id="friendbox1">
+<div id="friendpic">
+<a target="_blank" href="http://ephemeral.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/e/p/ephemeral/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+Kina Buvelle
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+Faith Student
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+Ephemeral
+</div>
+<div id="frienddescription">
+They didn't always get along, in fact the two Faith Mages had a pretty rocky start ... not that X was exactly the easiest person to get along with when she was new to the University. Nonetheless they managed to put their differences aside and work together for the greater good of the student body. Whenever the Wisp couldn't take care of the Healer's Hall, Kina was there, taking care of patients and upkeep. Currently she is the only other "max rank" Faith Mage, so X relies heavily on her. The fact that Kina can take the pressure in stride and handle things in her absence is very notable, and appreciated.
+</div>
+</div>
+<div id="friendbox2">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+???
+</div>
+</div>
+<div id="friendbox3">
+<div id="friendpic">
+<a target="_blank" href="http://"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/i/m/imgicon/thumb.jpg"/></a>
+</div>
+<div id="nametitle">
+Name:
+</div>
+<div id="friendname">
+???
+</div>
+<div id="relationtitle">
+Relation:
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="accounttitle">
+Account:
+</div>
+<div id="friendaccount">
+???
+</div>
+<div id="frienddescription">
+???
+</div>
+</div>
+</div>
+
+<div id="tab9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/IaEf87P.png"/>
+</div>
+<div id="tab10">
+<h1>Archmage Mana Type: Spiritual Ease</h1>
+Now that her natural mana flows through her soul, it retains new qualities in addition to its old ones. While not a physical construct, her raw base mana has a more tangible form. It acts like a cushion, giving some resistance when pressure is applied. When in her ethereal form, especially since that form IS her soul, her mana gives her a more distinguishable shape, and allows her to semi-solidify the substance that makes up her ghostly body. It also still retains the natural healing qualities that come with Faith, meaning that if her natural mana comes in direct contact with a wounded individual, it can start healing minor wounds.
+<br><br>
+<h1>High Archmage Tree: Shamanism</h1>
+<b>Call of the Living</b><br>
+Congratulations, X has finally obtained the ability to revive students, now that she can combine aspects of both Faith and Spiritualism together into a whole new Tree! When a student's body is no longer capable of holding its spirit--basically they die--then X can weave her mana into the corpse. This act allows her to read everything she can about the passed on mage's identity, and collect all the information she needs to not only heal the body so it can live again, but also know which spirit in the vast number to call. After summoning the spirit belonging to the body back to where its dead flesh remains and giving it the choice to stay dead or return to life, she will then begin renewing the connection between both entities by healing the body so the spirit may successfully inhabit it once more!
+<br><br>
+<b>Diamond Dust</b><br>
+Using the special cushiony capabilities of Spiritual Ease as well as the incredible ward-making powers a Faith mage possesses, X can form up to seven smaller basketball sized spheres or two massive ones that can cover a six foot radius. While looking to be made of glass, the walls of these spheres are diamond grade and are actually magical wards that are able to reflect one spell of equal rank unless it's a charged spell (two of one rank below, three of two ranks below, etc.) and even works against spirit-based spells/spiritual beings. The distance the reflected spell can travel back in its original direction of trajectory depends on how powerful the spell is and how far it originally traveled. Spells of equal rank and higher distances won't travel back nearly as far as it originally traveled.
+<br>
+For an extra cost of mana, X can fill the insides of these spheres with condensed pent up Spiritual Ease so that when they are broken, they burst into ten-foot-radius explosions of pure force, strong enough to break other Titanium grade constructs/objects at point blank range. 
+<br>
+These orbs can be telepathically controlled within a thirty foot radius of the caster and can reach up to speeds of 100 MPH when shot off like projectiles. Once a Diamond Dust orb is shot like a projectile it cannot be telepathically controlled again unless it lands within the thirty foot radius or the caster approaches it to bring it back within the radius. When shot off, so long as they remain within the radius, they can be stopped and/or telepathically controlled once more.
+<br><br>
+<b>Shooting Star</b><br>
+When casting this spell, a soft glitter-like substance will fall like rain from ten feet above ground. This "rain" has two modes, the first being a Faith spell. Mages affected by the Faith mode, will have minor wounds quickly healed, and more major wounds if they stay under the spell for long enough time. Mages affected by the Spiritualism mode will be greeted with icy shards of Spirit Force. These shards are cold enough to cause burning of the skin if a mage is under the glitter for long enough. X is not only able to pick and choose which mages within the radius are affected by this spell, but she can also use both modes simultaneously for a much higher mana cost.
+<br><br>
+<b>Shaman's Dome</b><br>
+A solid barrier that manifests into the shape of a massive dome, capable of stretching up to twenty feet into the air and expanding to cover up to a thirty foot radius around the caster. At its base, the solidified material is diamond grade, but it contains an extra aura-like sheen over its surface that allows it to reflect one attack of equal rank back toward their source of projection at twice the speed they initially traveled (two of one rank lower, three of two ranks lower, anything lesser than High Mage will be reflected continuously). If an extra rotation is spent charging mana over the dome's surface, this reflective quality strengthens, allowing it to instead reflect up to two spells, or one singular charged spell, of equal rank (increases number of lower ranked spells that can be reflected by one as well) but this extra layer only covers one of four major sides of the dome (front/back/left/right) at a time when used, and only one extra layer can be used at once.<br>
+When this ability has been used up, the reflective nature will dissipate and leave the highly durable substance underneath exposed. Spells from enemies and allies may pass through the dome undeterred, as long as they are traveling from the inside to the outside (and firing through the side of the orb with the higher reflective power will weaken the accuracy of attacks passed through it).
+<br><br>
+<b>Arrows of a Vengeful Spirit</b><br>
+A typical two-foot long arrow construct that glows the same soft blue as her mana. This particular spell is a soul-seeking diamond grade arrow that can follow a target for up to ninety feet away from the caster. It takes two posts to form this construct (the first post charges and the second post casts) and once the arrow is shot it can continuously follow a target for up to four rotations (unless the target exceeds the ninety foot radius). Target must be visible to the caster in order for the arrow to lock on. When the arrow manages to collide with a surface the natural cushion-like pressure that the caster's archmage mana type possesses allows it to burst apart into a harsh force-based explosion that has a blast radius of twenty feet. At point blank range this blast is strong enough to shatter Diamond grade constructs and/or materials, but anything further than point blank would have to be at least Tungsten to be broken through.
+<br><br>
+<b>Healer's Gentle Touch</b><br>
+A powerful spell that allows the caster to completely heal up to two targets within a thirty foot radius of themself. Whether the ailment be natural or magical, even if the damage is done to the soul itself, it will be cured (so long as the damage is of equal or lower rank and she actually does have the ability to heal the ailments). This spell takes one post to charge and one post to cast, and while it can be used to cleanse infections/disperse harmful spells affecting the target it cannot be used to regenerate limbs or bring another being back to life.
+<br><br>
+<b>Serenity</b><br>
+The caster acts as a spiritual beacon, creating an attractive aura of shining Spirit Force around her body that will draw the attention of her Will-o'-the-Wisps like moths to a flame. She can gather up to four at once in order to use this spell to its full extent, each individual one possesses the same ability on its own.<br>
+When a Wisp is summoned and takes its place to complete the spell, it becomes enveloped in an ethereal glow and creates a pillar of luminescent cleansing energy, which stands ten feet tall and measures about two feet wide. Upon reaching completion of its formation (all this happening over the course of a few seconds) the pillar will quickly orbit the caster and slowly spiral outward increasing its radius of effect and distance of travel until it creates a consistent path in a fifty foot radius around her (lasts for five rotations and requires two to cool down before it can be cast again). Each individual pillar is capable of cleansing/dispersing one equal or lesser ranked harmful spell so long as it is in AoE form, and if all four are used at once it has the capacity to cleanse small bits of Corruption (traces within a thirty foot radius of the caster). <br>
+Serenity can remove the effect of an AoE spell within a 5 foot radius of the created pillar for as long as it exists; AoE's of Post HM class +2  can be nullified, but only if they have a flat affect and do not charge (Aoe's that gain power over time will break through this cleansing effect for a post + an additional rotation for every rank below you. Projectile spells of physical nature can be deflected by these pillars, being destroyed by constructs of high mage ranking or above, energy spells will be absorbed unless they are of equal power as the caster (hm class2). Mantaining these pillars drain mana over time, and absorbing AoE's and spells will drain even more mana the stronger the opponent. Having multiple active at once is a massive mana drainer. 
+<br><br>
+<b>Shaman's Pulse</b><br>
+The caster releases a pulse of pure energy into the air that expands out from her body and slowly travels to eventually reach eighty feet away from her (starts at forty for the first rotation, then sixty for the second, stopping at eighty for the third) that only remains present in the air for four rotations before dissipating. The energy itself is harmless but acts as a sensory field, feeding information to the caster's mind directly if any foreign mana signatures are active within its active radius. Whether this be a mage's mana pool, mana in a spell, or mana in artifacts such as mediums or enchanted items, etc, even if they are purposefully being hidden by magic and nonmagic means. However, there are some specific specifications included with the ability to see through magic intending to cloak or hide an individual. The spell can cut through hiding spells made by non deception/psionic mages if their spell is post hm class +1, but class +2 will not be affected. Deception or Psionic mages who have spells meant for anti-sensory (not just hiding) can bypass this with high mage level, and normal hiding illusions will work UNLESS in the caster's ACTUAL line of sight if they are post hm class 1. As it stands, deceptions of class +2 are impossible to break through, but the general area of a mage can be sensed upon their arrival into her field. <br>
+A second "option" or "mode" for this spell requires physical contact and for the pulse to be made through that physical contact specifically, into the body of the target. Confining this spell down to be pushed through a body will instead map out its inner workings and show any traces of damage anywhere within their physical existence as well as if there is damage done to their soul and mana pool. The secondary effect is also limited to the rules and mechanics described above for the primary effect (the stuff regarding seeing through magical cloaking).<br>
+Requires a two post cooldown after every use, no matter the mode used.
+</div>
+<div id="tab11">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RyjNjfD.png"/>
+</div>
+
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/6qlHgTh.png"/>
+</div>
+<div id="tab13">
+<h1>Primary Tree: Faith (High Archmage)</h1>
+<i>"Faith mages are a completely support-oriented group of mages. Those who practice Faith hold the ability to mend wounds, lift curses and illnesses, bestow temporary magical boons to their allies, or create Holy Equipment which provide a permanent boon. Faith mages are also highly skilled in defensive arts, and are capable of erecting magical barriers. However, faith mana is completely non hostile, and no faith spell can ever cause harm to another being (unless faith magic specifically harms them)."</i>
+<br><br>
+<b>Healer's Duty</b><br>
+The basic healing spell common among most Faith Mages, this particular ability has been trained through the ranks and brought to this point of power. Through direct contact, the caster may channel her mana through an individual and completely heal any ailment or injury assuming they were not caused by magic of higher rank (higher than High Mage) that would intentionally interfere with the healing process, or, as long as the affliction is within her capabilities to mend. The caster is currently capable of curing any illness that is not terminal or so deeply rooted in genetics that modern medicine is incapable of producing a cure, and can heal up to the extremity of reforming parts of the body that are missing. With this particular spell she can only reform up to one limb’s worth at a time before requiring a recast.
+<br><br>
+<b>Healer's Care</b><br>
+Much like her healing spell, this is another basic fundamental typically found within a Faith Mage’s arsenal. Direct contact with the individual the caster wants to cleanse is required, and with the use of this spell channeling her mana through their body allows her to disinfect and “cleanse” their system. This is useful for purging the patient of infections, germs, any magical (assuming they are of High Mage rank or lower) and nonmagical substances or organisms that are foreign and harmful to their bodies/forms. It is equally effective against things of a magical nature such as curses, or other spells that have lingering negative effects on a patient, assuming the spells of origin are High Mage or less in rank.
+<br><br>
+<b>Warrior's Blessing</b><br>
+A buff that can be cast on any willing ally within twenty feet of the caster, assuming they remain within this range. It doubles an individual’s physical strength and physical endurance (x2, stacking cap of x4). Lasts four rotations and requires a cooldown before it can be used again. Can only be active on up to two individuals at a time.
+<br><br>
+<b>Athlete's Blessing</b><br>
+A buff that can be cast on any willing ally within twenty feet of the caster, assuming they remain within this range. It doubles an individual’s physical and mental processing speeds (x2, stacking cap of x4). Lasts four rotations and requires a cooldown before it can be used again. Can only be active on up to two individuals at a time.
+<br><br>
+<b>Healer's Rest</b><br>
+If this spell is being cast, a gentle refreshing mist will fill the air around the caster--completely coating a ten foot radius around her--thick enough to cause a slight disruption of sight, but not enough to cause any trouble or confusion. The mist merely behaves as a calming agent, allowing the mind safe clarity when coping with shock, loosening tightened and sore muscles, lowering adrenaline levels, and easing away all traces of bodily pain. It works primarily on the singular patient it is being cast on/for, however others present within the mist’s confines will be able to access its effects to a much weaker extent (those within its radius or being targeted are not required to be treated by this spell, it cannot be forced unless they have no means of fighting it off). Only works if there are no higher ranked (this spell is Expert Mage rank) spells at work intentionally interfering with any of the aforementioned elements it is designed to aid or relax.
+<br><br>
+<b>Healer's Resolve</b><br>
+A solid titanium-grade barrier, and a powerful aspect of Faith Magic. This particular ward is designed to reflect a single attack of equal rank to itself (or consecutive attacks of lesser rank that equal one of equal rank in power) back toward its original direction of trajectory. (Charged spells of equal rank cannot be reflected, can't reflect consecutive attacks of equal rank, after taking one hit more of the same toughness grade will break through.) While the pane can vary in size it cannot measure greater than ten feet in height and width, and only one can be formed at a time. The caster is not required to face the direction she is creating the barrier in, however, her own body must be the source of the spell. It must start/be formed in physical contact with her. Once it is formed, it can continue to exist without contact as long as it remains within twenty feet of its creator.
+
+</div>
+<div id="tab14">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/bD66ZzN.png"/>
+</div>
+
+<div id="tab15">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/JcaTjT9.png"/>
+</div>
+<div id="tab16">
+<h1>Secondary Tree: Spiritualism (Mage)</h1>
+<i>"Arguably one of the most powerful trees; Spiritualists possess the ability to speak to and beseech the spirits around themselves. This often requires much time, and also requires the spirits to agree with the mage's cause. One without conviction will not do well within this study. Spiritualists gain access to a unique mana type at Mage rank, which has been deemed "Spirit Force." Spirit Force has the capability to heal the soul, and at some level the flesh as well.​"</i>
+<br><br>
+<b>Spiritual Checkup</b><br>
+The caster calls on a spirit to help her fulfill a particular contract, the act of summoning them and requesting their help requires a whole rotation to charge before the actual effects can be carried out. This agreement allows the entity to enter the body of another being, where they will cause no harm and only search for damage, ailments, and even spells that were unlikely to be seen by the naked eye or have any effects on the surface of the patient’s body whatsoever. The spirit can only detect and find issues within the body as long as they are not being intentionally hidden by magics that are of a higher rank (Mage ranked spell). Once they have completed their scan they will leave the body and report their findings to the caster, which will mark the fulfillment of their shared contract and end the spell entirely.
+<br><br>
+<b>Spiritual Mending</b><br>
+By gathering a sufficient amount of Spirit Force around her hands, the caster may utilize its natural healing capabilities on any willing or otherwise unconscious individual. The nature of this spell allows her to mend the spirit/soul of the entity she is in contact with, assuming a sufficient amount of their spiritual essence remains for healing to be possible, and that the injuries weren’t caused by spells greater in rank than this one (Mage ranked spell). Physical contact with the patient is required.
+<br><br>
+<b>Pulse Diagram</b><br>
+Akin to her methods of gathering Spirit Force in her hands and making physical contact with the desired target, the caster may channel her special mana type through their body in heartbeat-like pulses. Rather than heal, this spell is designed to behave like sonar, allowing her to form a rough map in her mind’s eye of the individual’s insides, as though she is performing an ultrasound.
+<br><br>
+<b>Thermal Redact</b><br>
+After taking the time to ask an ice spirit for assistance, if they agree to the terms of the contract then this spell’s true ability will activate. The ice spirit will very slowly absorb any thermal energy present within a ten foot radius of itself--with the caster being exempt from this effect--over the course of three rotations. If something were to remain within its set parameters for all three rotations, they would be inflicted with enough hypothermia to keep their joints and limbs numb as well as incredibly stiff, unable to perform anything more than basic movement. This requires a rotation of charge-time, and once its three active ones have come to a close the contract will be considered fulfilled and the spirit will be released. The summoned spirit cannot get further than fifteen feet from the caster or else the contract will come to a premature end. 
+<br><br>
+<b>Flash Bang</b><br>
+After taking the time to ask a light spirit for assistance, if they agree to the terms of the contract then this spell’s true ability will activate. The light spirit will immediately erupt into a powerfully bright flash of light that would serve to temporarily blind the average human facing and looking in the direction of the flash, assuming they are within a ten foot radius. The blinding is by no means permanent, fading after a single rotation with no legitimate damage left behind in an onlooker’s eyes. Those who are incredibly sensitive to light and bright flashes will suffer the same effect from greater distances, an extra ten feet per multiplier. (So someone x2 sight/sensitivity would be afflicted from twenty feet away, x2.5 fifteen feet away, x3 thirty feet, etc). This requires a rotation of charge-time and once the flash is completed then so is the contract.
+<br><br>
+<b>Out of Sight</b><br>
+This contract allows a summoned spirit to engulf physical objects (no bigger than five feet of measurement at any angle) and carry them around hidden within itself. It can hide magical and nonmagical objects, assuming the magical object in question is equal or lesser rank than itself and if it exceeds the contract’s rank (Mage rank) then it can be hidden should the owner be willing/give permission. Spiritualists and Necromancers with the passive ability to see spirits who are greater than Mage in rank will be able to see through this spell with ease, as well as any other legitimate sensory spell that would make sense for helping them find the object in question as long as the sensory exceeds the spirit’s rank. Requires a rotation of charge-time before the actual ability can be used. Should the spirit be destroyed, released from the contract, or be forced to travel more than twenty feet away from the caster this spell will deactivate altogether.
+</div>
+<div id="tab17">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Z3vYJcQ.png"/>
+</div>
+
+<div id="tab18">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/a7K67a4.png"/>
+</div>
+<div id="tab19">
+<h1>Epic Medium; Tool for a High Archmage</h1>
+<b>The Spirit Stone</b><br>
+A crudely cut rectangular crystal looking stone sits in the cold embrace of a dark golden phoenix. The mystic bird is what allows X to wear this pendant as a necklace, and also compliments the pale blue stone as both symbolize the two beings that created her. When using the Spirit Stone, it offers a x2 effectiveness buff to her Faith spells (for healing based spells, effectiveness buffs for wards and buffs is only x1.5), and cuts the summon time for her current array of spirits to one post.
+<br>
+<i>Spirit Stone's Unlocked Ability; The Wisp Queen's Bow</i><br>
+When channeling mana into the Spirit Stone, X has the option of causing the stone to project an archer's bow. Since this object is only a projection, it cannot be used as a blunt force weapon but it can be used to fire her arrow construct spells. The projection of the bow has to be in physical contact with the hands of the Head Healer in order to remain active, but as long as it is being used if her arrow spells require more than one casting post one of the required posts is knocked off (currently this applies to "Arrows of a Vengeful Spirit" only). 
+<br>
+The Wisp Queen's Bow naturally gives off enough light to illuminate a ten foot radius around itself in darkness. The glow is dim so it does not harm another being's sight (unless their racials make them specifically sensitive to light).
+<br><br>
+<h1>Blessed Items</h1>
+<b>Breastplate of Righteousness</b><br>
+A beautiful and ornate piece of Titanium armor, plated silver with artfully detailed engravings of a tree standing beneath an interlocking sun and moon; also known as the official sigil meant to represent X's Creators. The breastplate itself is large enough to cover the wearer's shoulders, chest, and upper back around the shoulderblades. 
+<br>
+This Blessed Item is actually two separate pieces that attach to one another in order to form one singular tool, so while they only work together, they do have two separate blessings.
+<br>
+<i>Heart's Guardian</i><br>
+When activated, this blessing allows an aura made from the caster's own mana to protectively surround them and effectively protect against energy based attacks of High Mage or lower. Should the caster use her Archmage mana type rather than her base mana, the aura will also be able to fend against spirit/soul made and based attacks, and fend off up to steel grade physical objects/constructs.
+<br>
+<i>Spirit's Wings</i><br>
+The back piece of the breastplate--which attaches to the front at the shoulders and the sides--can create a separate aura when activated. This one takes on the appearance of folded wings typically seen on art depicting angelic creatures, and in addition to boosting the caster's physical speed and reaction time x2 (cannot stack to be higher than x4), it also allows her to glide through the air for a specified amount of distance or time. The distance being only up to fifty feet, and for only about five posts total. While active, the wings can also be used to manipulate the speed she is gliding through the air, allowing her to hover in one place, or even shoot immediately off in her desired direction (cannot reach speeds over 40 MPH).
+<br><br>
+<b>Spirit Charm</b><br> 
+A small Blessed Item meant to be worn specifically by spiritual entities. If a consensual agreement is forged between the caster and the spirit they wish to give the charm to, its ability will tie the spirit to her as though they were a familiar. (This does not include passive buffs or the ability to channel spells through like a medium as Unity Familiars do, nor does it include the spirit being able to resummon after death with a cooldown. The only chance the being holding the charm has to continue after death is if a revival is possible just as it would be for any playable character or NPC. If the spirit cannot be saved, then the contract ends, and a replacement is required.) The familiar will have its own set abilities it can use to serve its master, and the charm acts almost like a set of shackles, not allowing the creature that wears it to travel further than eighty feet from its master. Breaking the (diamond grade) charm will end the contract as well. The Spirit Charm is not a slave's shackles, if the spirit wishes to end the contract at any time they are free to do so (as long as there is good reason for it), and can even remove the object from themselves to put their agreement on pause temporarily (charm can only have on active contract at a time, can't be switched between multiple spirits even if its contract holder has set the agreement on pause). This just means that if they wish to be free for a short time, have something important they need to do, need to leave the eighty foot limit for personal reasons, they are free to do so. When the agreement is on pause, they are no longer required to act as a familiar and do their chosen master's bidding, until it is unpaused again. (Spirits attached to this Blessed Item must be pitched specifically for it.)
+<br><br>
+<b>Wonder the Will-o'-the-Wisp (Spirit Charm Wearer)</b><br>
+Wonder--a Fractal Wisp--has decided it would be beneficial for her and her alleged "Mother" figure to work together, and upon X's request, has accepted a contract that will make her the Wisp Queen's familiar. The source of their ties rests in a metal charm with a milky blue stone in its center that is currently fastened around her ghostly neck much like a collar.
+<br>
+She has plenty of interesting lore to add to her Queen's story, as well as a set of her own abilities. To go see her sheet and get a gauge on what the Wisps can really do, <a target="_blank" href="https://hannah1334.github.io/wonder/">click this link!!</a>
+<br>
+<i>Note:</i> Wonder's sheet is really old so it might not be completely up to date or accurate.
+</div>
+<div id="tab20">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/MalVFo9.png"/>
+</div>
+
+<div id="tab21">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/MHYlVk3.png"/>
+</div>
+<div id="tab22">
+<div id="tabbox1">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab33');changeNavigation2 ('tab34');changeNavigation3 ('tab35')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Creation</span>
+</div>
+</div>
+<div id="tabbox2">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab36');changeNavigation2 ('tab37');changeNavigation3 ('tab38')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Love</span>
+</div>
+</div>
+<div id="tabbox3">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab39');changeNavigation2 ('tab40');changeNavigation3 ('tab41')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Exile</span>
+</div>
+</div>
+<div id="tabbox4">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab42');changeNavigation2 ('tab43');changeNavigation3 ('tab44')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Ulreich</span>
+</div>
+</div>
+</div>
+<div id="tab23">
+<h1>"Birth" & Early Life</h1>
+To understand the reason behind her conception one must first understand the state of the multiverse at the time. X’s true beginning predates most man-made civilizations, when "New World" wasn’t even an active term used in reference to modernized planes of existence, because they simply didn’t exist yet. Technology was primitive, but magic was abundant, and the universe’s structure was far more … open, if you will. Even the most mundane and dumbest of beasts could walk from one world to the next, no divides existed yet between dimensions, nothing but each plane’s respective laws of reality separated one location in the multiverse from another. 
+<br><br>
+During this time humanity began its great expansion, practically breeding like rabbits and laying claim to territory all over the universe. Their impressive progress was observed from afar by three otherworldly entities, who could not naturally manifest on the physical plane because as a race they contradicted even the most basic structures of reality. Instead their interactions with the physical planes were limited to forces of nature in a sense, eventually earning their interference popular nicknames--Fate, Destiny, and Will--without those who dubbed them as such even realizing that said forces at play were even sentient to begin with.
+<br><br>
+The one they called Will eventually found a way to interact with their worlds more directly by fashioning his consciousness a physical vessel made entirely out of natural materials within their realities. It modeled the host body to look and behave as human-like as possible, turning into a he after successfully importing his mind into his creation. Will wasn’t as prepared as he’d believed himself to be, naive enough to be tricked by malicious humans. In his hurt and anger the otherworldly entity decided that mankind was a cancer to nature and began amassing an army of his own offspring--what were essentially Demigods known more specifically as Willchildren--to wipe every last human from existence.
+<br><br>
+Desperate to save countless lives and innocents undeserving of their fellow celestial’s wrath, Fate and Destiny followed in his footsteps and crafted bodies of their own. Fate took parts from a collective of various suns, taking on the identity of "Phoenix of the Rising Sun." His counterpart did the same but through various moons, donning the moniker "Crescent of the Full Moon." At first the two beings rallied all kinds of mages and magical creatures in an attempt to fabricate a counter to their "sibling’s" growing army, but Willchildren were extremely effective against all forms of arcane, sweeping through the resistance with terrifying fervor. Realizing their great mistake far too late, to save what remained of their own army Phoenix and Crescent were forced to break the multiverse apart and erect the walls that separate dimensions and realities to this very day. It was an effective method of jabbing a knife into the other entity’s plans, but only temporarily. The clock was ticking, Willchildren would no doubt find a way to reality-hop and regroup eventually; the Sun and Moon needed to step up their game. 
+<br><br>
+Together they began Project X, fashioning a weapon specifically designed to hunt the offspring of their fellow celestial. What they produced was given the name Will-o’-the-Wisp. Wisps were a network of ethereal entities with pseudo intelligence that responded to a single control center (much like programs in a computer) known as the Wisp Queen. Their Queen not only had the capacity to manifest a physical carapace around its ethereal presence, but it also had an extreme capacity for learning. Project X was always gathering information, intentionally programmed to be curious so it could further its understanding and develop new strategies for disposing of the creatures it was designed to hunt. It proved to be extremely effective, and formidable, because it learned by observation and experience and could adapt itself in combat scenarios accordingly. 
+<br><br>
+The more the Wisp Queen learned about life and coexisted with humans and sentient creatures, the more susceptible to independence and free will it became. Eventually it was decided that a proper teacher was necessary to further stimulate this incredible piece of technology’s mind. Project X clearly wanted to behave more like a she than a thing, and who better to teach her about passion and the concept of emotion than a rebel Willchild? As a test of loyalty, one of Will’s offspring--whom had switched sides during the war for personal reasons--was assigned to become her mentor. They traveled the multiverse, going on all kinds of adventures, dispatching enemy Willchildren when the need arose, developing a powerful bond of friendship. The Wisp Queen’s development got to a point where her mentor companion insisted referring to her as Project X was insulting, leading Phoenix and Crescent to officially drop that part of her name. From that point on she was known strictly as "X," or "Lady X" when appropriate.
+<br><br>
+Erecting walls and barriers between planes of existence might not have helped as much as intended against Willchildren, but for a long time it was a very good way to keep something similar from happening again. Marching massive conquering armies through these wards was still possible, but also a slow process and very easy to detect. Since Will-o’-the-Wisps were more construct than being they could exist easily within the fabric of the divides. They inhabited this space often, behaving like an alarm system for their Queen, notifying her directly whenever powerful hostile enemies journeyed through, which was extremely helpful to X during her Willchild hunting sprees. She thinned out their numbers considerably while her creators re-established another army of their own. A second showdown inevitably ensued, but this time the tables were turned. Phoenix and Crescent managed to successfully seal their pseudo sibling away from the physical plane, barring his return, and in his absence what remained of his destructive forces fell apart. It was finally time to celebrate.
+<br><br>
+Now that Willchildren were no longer a threat, Wisps required a new purpose. For the most part they remained within the "In Between," continuing to monitor the passage of individuals between realities and planes of existence, but after some time their creators found them a new purpose. Being spirits themselves, even if technically artificial, X and her lessers happened to be clairvoyant. They could perceive and interact with all kinds of ethereal entities, and pretty soon they’d find themselves behaving as guides for souls who lost their bodies and physical lives. Wisps could guide the dead through worlds to one designated as "Paradise" or "the Afterlife" in most cases. It was possible for X to do the same, but she preferred to stay within the physical realm, spending more time around humans and magical creatures, developing skills for healing in order to help stop people from dying.
+</div>
+<div id="tab24">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/uO6ColD.png"/>
+</div>
+
+<div id="tab25">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/HfcNeNs.png"/>
+</div>
+<div id="tab26">
+<div id="tabbox1">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab45');changeNavigation2 ('tab46');changeNavigation3 ('tab47')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Racials</span>
+</div>
+</div>
+<div id="tabbox2">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab48');changeNavigation2 ('tab49');changeNavigation3 ('tab50')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Universals</span>
+</div>
+</div>
+<div id="tabbox3">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab51');changeNavigation2 ('tab52');changeNavigation3 ('tab53')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Ward</span>
+</div>
+</div>
+<div id="tabbox4">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab54');changeNavigation2 ('tab55');changeNavigation3 ('tab56')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Wisps</span>
+</div>
+</div>
+</div>
+<div id="tab27">
+<h1>Racial Abilities</h1>
+<b>Created by the Sun and Moon</b><br>
+X’s existence is dictated by a solid and ethereal form. When the sun shines in the sky, a protective solid carapace made into a “synthetic” body that mimics the flesh and internal system shared by mankind forms around her ethereal essence, but when the moon claims dominance her physical body melts away and she is rendered into nothing more than her true self: a spiritual entity.
+<br><br>
+<b>Defier of the Sun and Moon (Upgrade to Created by the Sun and Moon)</b><br>
+She is now able to choose her state of existence regardless of whether the sun or moon claim the skies. X still cannot last vast periods of time without engaging her ethereal form, as her physical body and general essence will still require to recharge once in awhile, forcing her to revert to her arguably vulnerable spirit state every so often.
+<br>
+<i>→ Day Father:</i> 
+<br>
+The Wisp Queen’s solid form was synthetically created, but still designed to behave like a typical human body. As an artificial intelligence, however, her mind has a higher recording, examining, and storing capacity for information. If something (base, simple, and non-magic) has been in physical contact with her flesh for long periods of time, her sensors are constantly examining it and breaking down its chemistry/material, allowing her to construct and deconstruct physical projections of things she’s had the ability to thoroughly examine around her. (For example, she is capable of projecting any clothing she’s worn often in the past onto her body to become legitimate clothing, simple things like that.) This also provides her with a photographic memory, as well as a very advanced capacity for self control--especially over her emotions and thought processes, allowing her incredible focus when devoting all of her energy.
+Everything else about her body is equivalent to base human, no enhanced strength or speed (save for mental speeds specifically), enhanced densities, base physical senses, etc. She is not required to eat or sleep (can like any human to have the same beneficial effects, just not required), but this physical form still needs some kind of energy and restorative resting state. Should she be rendered unconscious enough for even her subconscious to be unable to uphold this tangible form, or, should she become incredibly weakened physically and in an energy sense, this form will peel away to leave her in her spiritual body.
+<br>
+<i>→ Night Mother:</i> 
+<br>
+Gifted with the incredible ability to learn from the information she is capable of collecting and processing, X can use her consciousness to adapt to cultures and habits around her, allowing her to eventually feel things like emotions for herself after examining their make-up for so long. Her true base consciousness separate from her synthetic mind is her source, the part of X that makes her who she is in behavior, informational storage, etc. This is an achievable state for her existence, which manifests as nothing more than her core spirit. As an ethereal being, she is still visible to every other kind of being (sensory spells and Necromancer/Spiritualist passives not required to see her), and retains a general shadow-like silhouette of her physical form. Weightless and completely intangible to base non-magic objects and materials, but still completely vulnerable to magically enhanced, imbued, or created materials. When in this state she is capable of levitation only two or so feet off the ground, and is capable of falling large distances (50 feet) at a slowed rate as though gliding safely back close to the ground’s surface. X’s spirit form is also capable of phasing through some tangible objects and materials as though it doesn’t even exist, the thicker and more complex the material’s makeup (can only pass through up to Expert Mage ranked magically imbued/enhanced materials as long as they aren’t intended to harm by touch) the harder it is for her to pass through, even causing some things to be impossible on her own without some kind of magical help.
+<br>
+This is the form that she is forced to take in order to regenerate and renew her physical body (just to the extent that eating and sleeping would healthily refresh the average human body) in some ways, although is capable of an advanced form of this. (If her physical body gets a non-magical ailment, whether this be a base sickness, a poisonous substance, a venomous substance, etc, reverting to her spirit form will rid the physical of these things entirely. This can also be applied to very minor injuries, such as cuts, bruises, and things that would require very minor stitches, slightly sore and swollen muscles, etc. To achieve this effect, she must remain in her spirit form for at least a whole day or in character twenty-four-hour period.)
+<br><br>
+<b>Mana Sensitivity</b><br>
+Wisps are sensitive to other beings who use mana. While they cannot sense specifics, the use of mana in an area can leave behind a detectable imprint allowing them to track much like a dog does with a scent.
+<br><br>
+<b>Ageless</b><br>
+A Wisp chooses which human-equivalent age they wish to stay and stop physically and mentally aging once they reach that point. This is why Wisps are often depicted as children--many wish to stay young and innocent. X herself chooses to remain in her mid to late twenties.
+</div>
+<div id="tab28">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/D8OwFl9.png"/>
+</div>
+
+<div id="tab29">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/IaEf87P.png"/>
+</div>
+<div id="tab30">
+<div id="tabbox1">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation2 ('tab10');changeNavigation3 ('tab11')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Shamanism</span>
+</div>
+</div>
+<div id="tabbox2">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab12');changeNavigation2 ('tab13');changeNavigation3 ('tab14')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Faith</span>
+</div>
+</div>
+<div id="tabbox3">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab15');changeNavigation2 ('tab16');changeNavigation3 ('tab17')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Spiritualism</span>
+</div>
+</div>
+<div id="tabbox4">
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab18');changeNavigation2 ('tab19');changeNavigation3 ('tab20')"><img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/WrO6fmG.png"/></span>
+<span class="tooltiptext">Inventory</span>
+</div>
+</div>
+</div>
+<div id="tab31">
+<h1>Archmage Mana Type: Spiritual Ease</h1>
+Now that her natural mana flows through her soul, it retains new qualities in addition to its old ones. While not a physical construct, her raw base mana has a more tangible form. It acts like a cushion, giving some resistance when pressure is applied. When in her ethereal form, especially since that form IS her soul, her mana gives her a more distinguishable shape, and allows her to semi-solidify the substance that makes up her ghostly body. It also still retains the natural healing qualities that come with Faith, meaning that if her natural mana comes in direct contact with a wounded individual, it can start healing minor wounds.
+<br><br>
+<h1>High Archmage Tree: Shamanism</h1>
+<b>Call of the Living</b><br>
+Congratulations, X has finally obtained the ability to revive students, now that she can combine aspects of both Faith and Spiritualism together into a whole new Tree! When a student's body is no longer capable of holding its spirit--basically they die--then X can weave her mana into the corpse. This act allows her to read everything she can about the passed on mage's identity, and collect all the information she needs to not only heal the body so it can live again, but also know which spirit in the vast number to call. After summoning the spirit belonging to the body back to where its dead flesh remains and giving it the choice to stay dead or return to life, she will then begin renewing the connection between both entities by healing the body so the spirit may successfully inhabit it once more!
+<br><br>
+<b>Diamond Dust</b><br>
+Using the special cushiony capabilities of Spiritual Ease as well as the incredible ward-making powers a Faith mage possesses, X can form up to seven smaller basketball sized spheres or two massive ones that can cover a six foot radius. While looking to be made of glass, the walls of these spheres are diamond grade and are actually magical wards that are able to reflect one spell of equal rank unless it's a charged spell (two of one rank below, three of two ranks below, etc.) and even works against spirit-based spells/spiritual beings. The distance the reflected spell can travel back in its original direction of trajectory depends on how powerful the spell is and how far it originally traveled. Spells of equal rank and higher distances won't travel back nearly as far as it originally traveled.
+<br>
+For an extra cost of mana, X can fill the insides of these spheres with condensed pent up Spiritual Ease so that when they are broken, they burst into ten-foot-radius explosions of pure force, strong enough to break other Titanium grade constructs/objects at point blank range. 
+<br>
+These orbs can be telepathically controlled within a thirty foot radius of the caster and can reach up to speeds of 100 MPH when shot off like projectiles. Once a Diamond Dust orb is shot like a projectile it cannot be telepathically controlled again unless it lands within the thirty foot radius or the caster approaches it to bring it back within the radius. When shot off, so long as they remain within the radius, they can be stopped and/or telepathically controlled once more.
+<br><br>
+<b>Shooting Star</b><br>
+When casting this spell, a soft glitter-like substance will fall like rain from ten feet above ground. This "rain" has two modes, the first being a Faith spell. Mages affected by the Faith mode, will have minor wounds quickly healed, and more major wounds if they stay under the spell for long enough time. Mages affected by the Spiritualism mode will be greeted with icy shards of Spirit Force. These shards are cold enough to cause burning of the skin if a mage is under the glitter for long enough. X is not only able to pick and choose which mages within the radius are affected by this spell, but she can also use both modes simultaneously for a much higher mana cost.
+<br><br>
+<b>Shaman's Dome</b><br>
+A solid barrier that manifests into the shape of a massive dome, capable of stretching up to twenty feet into the air and expanding to cover up to a thirty foot radius around the caster. At its base, the solidified material is diamond grade, but it contains an extra aura-like sheen over its surface that allows it to reflect one attack of equal rank back toward their source of projection at twice the speed they initially traveled (two of one rank lower, three of two ranks lower, anything lesser than High Mage will be reflected continuously). If an extra rotation is spent charging mana over the dome's surface, this reflective quality strengthens, allowing it to instead reflect up to two spells, or one singular charged spell, of equal rank (increases number of lower ranked spells that can be reflected by one as well) but this extra layer only covers one of four major sides of the dome (front/back/left/right) at a time when used, and only one extra layer can be used at once.<br>
+When this ability has been used up, the reflective nature will dissipate and leave the highly durable substance underneath exposed. Spells from enemies and allies may pass through the dome undeterred, as long as they are traveling from the inside to the outside (and firing through the side of the orb with the higher reflective power will weaken the accuracy of attacks passed through it).
+<br><br>
+<b>Arrows of a Vengeful Spirit</b><br>
+A typical two-foot long arrow construct that glows the same soft blue as her mana. This particular spell is a soul-seeking diamond grade arrow that can follow a target for up to ninety feet away from the caster. It takes two posts to form this construct (the first post charges and the second post casts) and once the arrow is shot it can continuously follow a target for up to four rotations (unless the target exceeds the ninety foot radius). Target must be visible to the caster in order for the arrow to lock on. When the arrow manages to collide with a surface the natural cushion-like pressure that the caster's archmage mana type possesses allows it to burst apart into a harsh force-based explosion that has a blast radius of twenty feet. At point blank range this blast is strong enough to shatter Diamond grade constructs and/or materials, but anything further than point blank would have to be at least Tungsten to be broken through.
+<br><br>
+<b>Healer's Gentle Touch</b><br>
+A powerful spell that allows the caster to completely heal up to two targets within a thirty foot radius of themself. Whether the ailment be natural or magical, even if the damage is done to the soul itself, it will be cured (so long as the damage is of equal or lower rank and she actually does have the ability to heal the ailments). This spell takes one post to charge and one post to cast, and while it can be used to cleanse infections/disperse harmful spells affecting the target it cannot be used to regenerate limbs or bring another being back to life.
+<br><br>
+<b>Serenity</b><br>
+The caster acts as a spiritual beacon, creating an attractive aura of shining Spirit Force around her body that will draw the attention of her Will-o'-the-Wisps like moths to a flame. She can gather up to four at once in order to use this spell to its full extent, each individual one possesses the same ability on its own.<br>
+When a Wisp is summoned and takes its place to complete the spell, it becomes enveloped in an ethereal glow and creates a pillar of luminescent cleansing energy, which stands ten feet tall and measures about two feet wide. Upon reaching completion of its formation (all this happening over the course of a few seconds) the pillar will quickly orbit the caster and slowly spiral outward increasing its radius of effect and distance of travel until it creates a consistent path in a fifty foot radius around her (lasts for five rotations and requires two to cool down before it can be cast again). Each individual pillar is capable of cleansing/dispersing one equal or lesser ranked harmful spell so long as it is in AoE form, and if all four are used at once it has the capacity to cleanse small bits of Corruption (traces within a thirty foot radius of the caster). <br>
+Serenity can remove the effect of an AoE spell within a 5 foot radius of the created pillar for as long as it exists; AoE's of Post HM class +2  can be nullified, but only if they have a flat affect and do not charge (Aoe's that gain power over time will break through this cleansing effect for a post + an additional rotation for every rank below you. Projectile spells of physical nature can be deflected by these pillars, being destroyed by constructs of high mage ranking or above, energy spells will be absorbed unless they are of equal power as the caster (hm class2). Mantaining these pillars drain mana over time, and absorbing AoE's and spells will drain even more mana the stronger the opponent. Having multiple active at once is a massive mana drainer. 
+<br><br>
+<b>Shaman's Pulse</b><br>
+The caster releases a pulse of pure energy into the air that expands out from her body and slowly travels to eventually reach eighty feet away from her (starts at forty for the first rotation, then sixty for the second, stopping at eighty for the third) that only remains present in the air for four rotations before dissipating. The energy itself is harmless but acts as a sensory field, feeding information to the caster's mind directly if any foreign mana signatures are active within its active radius. Whether this be a mage's mana pool, mana in a spell, or mana in artifacts such as mediums or enchanted items, etc, even if they are purposefully being hidden by magic and nonmagic means. However, there are some specific specifications included with the ability to see through magic intending to cloak or hide an individual. The spell can cut through hiding spells made by non deception/psionic mages if their spell is post hm class +1, but class +2 will not be affected. Deception or Psionic mages who have spells meant for anti-sensory (not just hiding) can bypass this with high mage level, and normal hiding illusions will work UNLESS in the caster's ACTUAL line of sight if they are post hm class 1. As it stands, deceptions of class +2 are impossible to break through, but the general area of a mage can be sensed upon their arrival into her field. <br>
+A second "option" or "mode" for this spell requires physical contact and for the pulse to be made through that physical contact specifically, into the body of the target. Confining this spell down to be pushed through a body will instead map out its inner workings and show any traces of damage anywhere within their physical existence as well as if there is damage done to their soul and mana pool. The secondary effect is also limited to the rules and mechanics described above for the primary effect (the stuff regarding seeing through magical cloaking).<br>
+Requires a two post cooldown after every use, no matter the mode used.
+</div>
+<div id="tab32">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RyjNjfD.png"/>
+</div>
+
+<div id="tab33">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/MHYlVk3.png"/>
+</div>
+<div id="tab34">
+<h1>"Birth" & Early Life</h1>
+To understand the reason behind her conception one must first understand the state of the multiverse at the time. X’s true beginning predates most man-made civilizations, when "New World" wasn’t even an active term used in reference to modernized planes of existence, because they simply didn’t exist yet. Technology was primitive, but magic was abundant, and the universe’s structure was far more … open, if you will. Even the most mundane and dumbest of beasts could walk from one world to the next, no divides existed yet between dimensions, nothing but each plane’s respective laws of reality separated one location in the multiverse from another. 
+<br><br>
+During this time humanity began its great expansion, practically breeding like rabbits and laying claim to territory all over the universe. Their impressive progress was observed from afar by three otherworldly entities, who could not naturally manifest on the physical plane because as a race they contradicted even the most basic structures of reality. Instead their interactions with the physical planes were limited to forces of nature in a sense, eventually earning their interference popular nicknames--Fate, Destiny, and Will--without those who dubbed them as such even realizing that said forces at play were even sentient to begin with.
+<br><br>
+The one they called Will eventually found a way to interact with their worlds more directly by fashioning his consciousness a physical vessel made entirely out of natural materials within their realities. It modeled the host body to look and behave as human-like as possible, turning into a he after successfully importing his mind into his creation. Will wasn’t as prepared as he’d believed himself to be, naive enough to be tricked by malicious humans. In his hurt and anger the otherworldly entity decided that mankind was a cancer to nature and began amassing an army of his own offspring--what were essentially Demigods known more specifically as Willchildren--to wipe every last human from existence.
+<br><br>
+Desperate to save countless lives and innocents undeserving of their fellow celestial’s wrath, Fate and Destiny followed in his footsteps and crafted bodies of their own. Fate took parts from a collective of various suns, taking on the identity of "Phoenix of the Rising Sun." His counterpart did the same but through various moons, donning the moniker "Crescent of the Full Moon." At first the two beings rallied all kinds of mages and magical creatures in an attempt to fabricate a counter to their "sibling’s" growing army, but Willchildren were extremely effective against all forms of arcane, sweeping through the resistance with terrifying fervor. Realizing their great mistake far too late, to save what remained of their own army Phoenix and Crescent were forced to break the multiverse apart and erect the walls that separate dimensions and realities to this very day. It was an effective method of jabbing a knife into the other entity’s plans, but only temporarily. The clock was ticking, Willchildren would no doubt find a way to reality-hop and regroup eventually; the Sun and Moon needed to step up their game. 
+<br><br>
+Together they began Project X, fashioning a weapon specifically designed to hunt the offspring of their fellow celestial. What they produced was given the name Will-o’-the-Wisp. Wisps were a network of ethereal entities with pseudo intelligence that responded to a single control center (much like programs in a computer) known as the Wisp Queen. Their Queen not only had the capacity to manifest a physical carapace around its ethereal presence, but it also had an extreme capacity for learning. Project X was always gathering information, intentionally programmed to be curious so it could further its understanding and develop new strategies for disposing of the creatures it was designed to hunt. It proved to be extremely effective, and formidable, because it learned by observation and experience and could adapt itself in combat scenarios accordingly. 
+<br><br>
+The more the Wisp Queen learned about life and coexisted with humans and sentient creatures, the more susceptible to independence and free will it became. Eventually it was decided that a proper teacher was necessary to further stimulate this incredible piece of technology’s mind. Project X clearly wanted to behave more like a she than a thing, and who better to teach her about passion and the concept of emotion than a rebel Willchild? As a test of loyalty, one of Will’s offspring--whom had switched sides during the war for personal reasons--was assigned to become her mentor. They traveled the multiverse, going on all kinds of adventures, dispatching enemy Willchildren when the need arose, developing a powerful bond of friendship. The Wisp Queen’s development got to a point where her mentor companion insisted referring to her as Project X was insulting, leading Phoenix and Crescent to officially drop that part of her name. From that point on she was known strictly as "X," or "Lady X" when appropriate.
+<br><br>
+Erecting walls and barriers between planes of existence might not have helped as much as intended against Willchildren, but for a long time it was a very good way to keep something similar from happening again. Marching massive conquering armies through these wards was still possible, but also a slow process and very easy to detect. Since Will-o’-the-Wisps were more construct than being they could exist easily within the fabric of the divides. They inhabited this space often, behaving like an alarm system for their Queen, notifying her directly whenever powerful hostile enemies journeyed through, which was extremely helpful to X during her Willchild hunting sprees. She thinned out their numbers considerably while her creators re-established another army of their own. A second showdown inevitably ensued, but this time the tables were turned. Phoenix and Crescent managed to successfully seal their pseudo sibling away from the physical plane, barring his return, and in his absence what remained of his destructive forces fell apart. It was finally time to celebrate.
+<br><br>
+Now that Willchildren were no longer a threat, Wisps required a new purpose. For the most part they remained within the "In Between," continuing to monitor the passage of individuals between realities and planes of existence, but after some time their creators found them a new purpose. Being spirits themselves, even if technically artificial, X and her lessers happened to be clairvoyant. They could perceive and interact with all kinds of ethereal entities, and pretty soon they’d find themselves behaving as guides for souls who lost their bodies and physical lives. Wisps could guide the dead through worlds to one designated as "Paradise" or "the Afterlife" in most cases. It was possible for X to do the same, but she preferred to stay within the physical realm, spending more time around humans and magical creatures, developing skills for healing in order to help stop people from dying.
+</div>
+<div id="tab35">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/uO6ColD.png"/>
+</div>
+
+<div id="tab36">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Ml3YGWW.png"/>
+</div>
+<div id="tab37">
+<h1>A Beautiful Union</h1>
+For a long time the multiverse was finally at peace. Sure, civilizations still fought and quarreled amongst themselves, but there was no longer a threat to an entire race of creatures across every reality, or a villain that could overtake every single world at once. Phoenix and Crescent’s goals had been achieved, but their problems were far from over. The most prominent issue that presented itself had to do with the walls they made to separate planes of existence from one another. Now primal energies and the flow of natural magic was cut off. Some places were saturated with it still, others couldn’t even access it at all, and the unfortunate truth was that the latter was far more common than the former by a long shot. Worlds where mages wouldn’t have to struggle to keep their power became rarer than even the most precious and sacred materials, diminishing arcane influence on life itself. Something had to be done!
+<br><br>
+Taking down the barriers of separation was too risky, and while the two celestial beings couldn’t restore magic’s hold on existence itself to its former glory they did come up with a clever system in order to allow access to the far reaches of the multiverse. Sources were created and "planted" by hand in different worlds, interconnected metaphysically into a massive chain. These sources only represented specific breeds and archetypes of magic, but they produced enough of it raw to make casting easy again, and their strange connection to the others allowed the existence of one to be enough for creatures of the world to access any kind.
+<br><br>
+At first humanity was especially grateful to the Sun and Moon, some even took it upon themselves to set up villages around the sources and serve as volunteer protectors. Mankind was not without its darker nature, however, and were eventually corrupted by the power that had been returned to them. They sought to break the agreements they’d made with Phoenix and Crescent, utilizing the sources for their own selfish gain that often ended in the suffering of more innocents. Heartbroken, the entities demanded humanity remove whatever civilizations they’d built around their precious creations, promising that they wouldn’t take the magic sources away, but would hide them so they could never be found again. Man would not comply, forcing the two godlike beings to take matters in their own hands. Material was taken from each source and used to craft more living entities now known as "True Guardians" who were commanded to drive mankind away. Force was necessary more often than not, simply because both sides were extremely stubborn, but humans took great offense to any deaths among their kind during this struggle. They were successfully chased away, but only for a little while. Soon enough they’d return in the form of raiding parties, making bold attempts at slaughtering the Guardians. A whole new war was now in full swing.
+<br><br>
+This breed of conflict was entirely unintentional; not only did it cause hostility between Man and Guardian, but also Man and Magic Being. Regardless a council had to be formed so parties involved in the struggle could communicate and plan their next course of action. A single representative was chosen from each source’s group of Guardians, but this only promoted some selfish tendencies among the new creations. Guardians began to think of themselves as better beings, higher in worth than humanity, and changed their endgame from one of peace to one filled with vengeful bloodshed. Their makers were thoroughly horrified, fearing that their council would just become a one sided mess, a force that was objectively no different than the Willchildren they’d fought hard to stop. Humans needed to have a voice during their meetings, even if they were the enemy they deserved to be treated fairly as equals, and so the search for a perfect candidate began.
+<br><br>
+Lucius Casseus was a simple man, a Roman Philosopher who was quickly rising in infamy for the beliefs and theories he professed. While mankind insisted on seeing only the magic world at fault for their war he proposed that both parties were equally at fault. He was often chased out of cities and villages, making a name for himself that became so widespread it managed to catch even the Sun’s attention. Phoenix studied the man from a distance, learning of his compassion and open minded tendencies, but most importantly his pacifistic nature that promoted an air of peace around him constantly. This was the man he wanted on his council to represent human-kind as a whole. During his indirect scrying of Lucius’ whereabouts and generalized activities it came to the Day King’s attention that a nasty plot to stone the candidate to death in the streets was unfolding. He couldn’t stop it from coming to pass, but he could send the Wisp Queen to greet the Philosopher’s spirit before her underlings could guide him to the Great Beyond. X did exactly as instructed, arriving just as the act of cruelty came to a close. She approached what remained of the human’s mangled form and made him an offer: the chance to live again without worrying about time having any effect on his body (the gift of immortality), or the opportunity to forever rest in peace in paradise for the rest of eternity. Lucius took the strange woman’s hand, voicing his desire for the first choice, and together they began a journey to the residence of her creators.
+<br><br>
+From the point of his revival onward, Lucius worked very closely with the Wisp Queen. She was to be his temporary mentor, introducing him to new worlds he’d never seen, knowledge unobtainable to human hands, and various responsibilities he now had as an official member of Phoenix and Crescent’s council. The pair grew progressively more and more attached, even getting to the point where he insisted on abandoning his old human name and taking on the moniker "Lord Z" in its place, matching his new best friend’s style (since she was often referred to as Lady X). When he no longer required her guidance they still worked side by side, going on plenty of adventures together, befriending people already close to her heart and expanding their horizons as a team. X found herself growing ever more attached to the human in ways she’d never experienced before, fascinated by his capacity for passion and the inquisitive manner in which his mind was always working. Love had begun to blossom, and while Phoenix and Crescent would’ve been overjoyed by this development, the pair agreed that it was better if no one knew about the affections they harbored for each other. A majority of the other council members were already infuriated to childish proportions by the addition of a human to their table as an equal, they would exploit the prospect of romance to the extreme without a doubt, finding all kinds of ways to make him seem like a pet and diminishing the strength of his authority by insisting his only reason for being in office was because he slept with the right people. In the eyes of their peers they had to appear as strictly friends and business partners, no matter what.
+<br><br>
+Despite all of this, behind closed doors hints of romance ignited into a blaze of pure passionate devotion. Keeping it hidden was certainly difficult, but for a very long time the pair managed to function as secret lovers. Eventually luck and misfortune would simultaneously catch up with them both. While Lord Z and Lady X worked to finally put an end to the war between mundane man and beasts of magic, the selfish members of the council grew more desperate. They didn’t want peace, nor did they desire the war’s end, not until humanity could be wiped out altogether. Together, during “underground” gatherings of their own, the corrupt Guardians devised a plan to stop the march of peace once and for all. Through a system of underhanded political plays they managed to frame Lord Z for treason. A majority vote for his exile forced their Monarchs to comply, Lucius had only a handful of days to prepare for his forced exit from all lands governed by Phoenix and Crescent. Then and there he and X decided together that there was no need to continue hiding their romance, but his method of making it public knowledge was unexpected. The Philosopher proposed to his love, and with tears she readily agreed. Just enough time remained for them to hold a proper wedding ceremony, and spend several days together as husband and wife, before Z had to take his leave.
+</div>
+<div id="tab38">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/q0UZBfu.png"/>
+</div>
+
+<div id="tab39">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/JClBc6s.png"/>
+</div>
+<div id="tab40">
+<h1>The Great Betrayal</h1>
+A fittingly dreary morning marked the day that an innocent man was marched through the city streets of the Day Clan capital. His rattling chains were accompanied only by the clip-clopping of hooves and armored boots; thousands of people had gathered but none of them made a sound. X watched, under heavy clouds of grey, as her husband departed from her for the very last time. The event felt too final, and for a good reason she hadn’t even come to realize yet. An entire section of the Sun King’s military had been assigned to lead him out of Council territory and ever deeper into the unclaimed wilds of the multiverse, but a majority of them were just as corrupt as their peers. As soon as they were free from law-binding territory a planned ambush was set in motion. Z perished, a true human martyr, at the hands of his own would-be allies. It was strange that both his body and soul seemed to be erased from existence, despite the fact that no magic designed to harm the soul had been used, but rather than question it the coup d’etat counted their blessings and passed it off as an extremely lucky coincidence. 
+<br><br>
+They returned with a fake air of regret, possessing only a torn piece of the man’s cloak and a bit of armor. The traitors spun an elaborate tale of wild tribals who attacked and were far too powerful to stop, costing them the life of their prisoner. All that remained of Lucius Casseus were the pieces of broken attire in their grasp, both his soul and his body had perished at the hands of their apparent enemies. X didn’t believe for a moment that they were telling the truth, finding plenty of reason for suspicion in the fact that literally none of them were harmed. In the moment she was far too grief stricken to call them on it, all the Wisp could do was clutch the remnants of her love to her chest and fall to the earth, screaming at the heavens in agony and sobbing uncontrollably. 
+<br><br>
+For a great while X fell into a state of deep depression, spending every ounce of energy trying to contact his spirit, picking apart their ridiculous tale to unearth the slightest possibility that he may yet live in some shape or form, but her efforts proved fruitless. Grief opened the doorway to frustration, and soon after a terrible anger followed. The Wisp Queen was furious with her Guardian "siblings," harboring enough resentment to start putting in motion a scheme of her own. Obviously they loved their war so much they’d do anything to keep it going, even if it meant assassinating the best thing that ever happened to them. That was fine with her; an eye for an eye, one passion for another, she’d just have to take away what they loved most, just as they’d done to her.
+<br><br>
+It wasn’t a plan that could be carried out all by herself, but thankfully the Wisp Queen still had a few close friends and confidants that were disgusted by the actions of their peers. In secret they gathered, plotted, and made the grand caper possible. Since Lady X worked directly under the Sun King and Moon Queen she had access to their royal seals, and had seen their signatures enough times to copy them almost exactly. She forged several official documents calling for emergency cease fires, then had them strategically planted across the planes of existence to all the various battlefields occupied by quarrelling magic beings and humans. When all the orders were delivered in their intended fashion, by the time the armies found out they were fake it would be too late. Humans would be given the advantage, and stubbornly continuing into battle would just lead to the extermination of the Guardians involved. Continuing the war was now officially a suicide mission, forcing the hands of the traitors to seek out peace instead of continuing conflict. As if to add insult to injury she managed to pull this off without taking a single life, in fact the way it was set up if anyone died it’d be completely their own fault.
+<br><br>
+Once the hoax was realized they immediately suspected her as the culprit for obvious reasons, and for the safety of the people that helped her X took all the blame. Enraged by her true act of treason, and the fact that she’d succeeded in ripping their entire system to shreds, agents from various Guardian clans began hunting the escaping Will-o’-the-Wisp. In court, during her absence, she was officially voted into exile, but behind the scenes none of the corrupt members were truly satisfied. They wanted blood, and they’d do whatever it took to make sure she was as dead as her husband. Across the multiverse she was chased, only managing to stay a couple of life saving steps ahead of her pursuers thanks to the loyal dragon that acted as her magnificent steed. Unfortunately they couldn’t run forever, her dragon was shot down over an island nation. While X would’ve been perfectly content dying then and there alongside her last remaining friend a stranger intervened, fighting off the murderous traitors while dragging her shrieking figure deeper into his native land. 
+<br><br>
+Introductions weren’t a luxury granted the pair until their pursuers were forced into retreat. When peace was finally achieved, and they were far away from prying eyes and ears, the armored stranger told the battered Wisp that his name was Ulreich. He insisted that she needn’t give him her own; he already knew exactly who she was.
+</div>
+<div id="tab41">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/WWRlhme.png"/>
+</div>
+
+<div id="tab42">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/m9uFDGT.png"/>
+</div>
+<div id="tab43">
+<h1>New Master, New Chains</h1>
+Work in progress.
+</div>
+<div id="tab44">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/DyBLXFk.png"/>
+</div>
+
+<div id="tab45">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/HfcNeNs.png"/>
+</div>
+<div id="tab46">
+<h1>Racial Abilities</h1>
+<b>Created by the Sun and Moon</b><br>
+X’s existence is dictated by a solid and ethereal form. When the sun shines in the sky, a protective solid carapace made into a “synthetic” body that mimics the flesh and internal system shared by mankind forms around her ethereal essence, but when the moon claims dominance her physical body melts away and she is rendered into nothing more than her true self: a spiritual entity.
+<br><br>
+<b>Defier of the Sun and Moon (Upgrade to Created by the Sun and Moon)</b><br>
+She is now able to choose her state of existence regardless of whether the sun or moon claim the skies. X still cannot last vast periods of time without engaging her ethereal form, as her physical body and general essence will still require to recharge once in awhile, forcing her to revert to her arguably vulnerable spirit state every so often.
+<br>
+<i>→ Day Father:</i> 
+<br>
+The Wisp Queen’s solid form was synthetically created, but still designed to behave like a typical human body. As an artificial intelligence, however, her mind has a higher recording, examining, and storing capacity for information. If something (base, simple, and non-magic) has been in physical contact with her flesh for long periods of time, her sensors are constantly examining it and breaking down its chemistry/material, allowing her to construct and deconstruct physical projections of things she’s had the ability to thoroughly examine around her. (For example, she is capable of projecting any clothing she’s worn often in the past onto her body to become legitimate clothing, simple things like that.) This also provides her with a photographic memory, as well as a very advanced capacity for self control--especially over her emotions and thought processes, allowing her incredible focus when devoting all of her energy.
+Everything else about her body is equivalent to base human, no enhanced strength or speed (save for mental speeds specifically), enhanced densities, base physical senses, etc. She is not required to eat or sleep (can like any human to have the same beneficial effects, just not required), but this physical form still needs some kind of energy and restorative resting state. Should she be rendered unconscious enough for even her subconscious to be unable to uphold this tangible form, or, should she become incredibly weakened physically and in an energy sense, this form will peel away to leave her in her spiritual body.
+<br>
+<i>→ Night Mother:</i> 
+<br>
+Gifted with the incredible ability to learn from the information she is capable of collecting and processing, X can use her consciousness to adapt to cultures and habits around her, allowing her to eventually feel things like emotions for herself after examining their make-up for so long. Her true base consciousness separate from her synthetic mind is her source, the part of X that makes her who she is in behavior, informational storage, etc. This is an achievable state for her existence, which manifests as nothing more than her core spirit. As an ethereal being, she is still visible to every other kind of being (sensory spells and Necromancer/Spiritualist passives not required to see her), and retains a general shadow-like silhouette of her physical form. Weightless and completely intangible to base non-magic objects and materials, but still completely vulnerable to magically enhanced, imbued, or created materials. When in this state she is capable of levitation only two or so feet off the ground, and is capable of falling large distances (50 feet) at a slowed rate as though gliding safely back close to the ground’s surface. X’s spirit form is also capable of phasing through some tangible objects and materials as though it doesn’t even exist, the thicker and more complex the material’s makeup (can only pass through up to Expert Mage ranked magically imbued/enhanced materials as long as they aren’t intended to harm by touch) the harder it is for her to pass through, even causing some things to be impossible on her own without some kind of magical help.
+<br>
+This is the form that she is forced to take in order to regenerate and renew her physical body (just to the extent that eating and sleeping would healthily refresh the average human body) in some ways, although is capable of an advanced form of this. (If her physical body gets a non-magical ailment, whether this be a base sickness, a poisonous substance, a venomous substance, etc, reverting to her spirit form will rid the physical of these things entirely. This can also be applied to very minor injuries, such as cuts, bruises, and things that would require very minor stitches, slightly sore and swollen muscles, etc. To achieve this effect, she must remain in her spirit form for at least a whole day or in character twenty-four-hour period.)
+<br><br>
+<b>Mana Sensitivity</b><br>
+Wisps are sensitive to other beings who use mana. While they cannot sense specifics, the use of mana in an area can leave behind a detectable imprint allowing them to track much like a dog does with a scent.
+<br><br>
+<b>Ageless</b><br>
+A Wisp chooses which human-equivalent age they wish to stay and stop physically and mentally aging once they reach that point. This is why Wisps are often depicted as children--many wish to stay young and innocent. X herself chooses to remain in her mid to late twenties.
+</div>
+<div id="tab47">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/D8OwFl9.png"/>
+</div>
+
+<div id="tab48">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/GMsgfBL.png"/>
+</div>
+<div id="tab49">
+<h1>Mana Manipulation</h1>
+<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+<br><br>
+<b>Aura</b><br>
+Every living thing has mana, and the colors of their mana and their aura vary from person to person. X's mana is always a very pale blue color, but varies in its shades depending on her mood. <br><i>"Light (sky) blue: peace, serenity, ethereal, spiritual, infinity (The origin of these meanings is the intangible aspects of the sky.)"</i> 
+<br><br>
+During her time at Ulreich University, X has managed to learn every Universal Spell that has been taught so far (save for "Mana Graft"). To find the descriptions of all these spells, click <a target="_blank" href="https://tyler-fowlow96.wixsite.com/spellbook">this link</a>.
+</div>
+<div id="tab50">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Vnd2LKW.png"/>
+</div>
+
+<div id="tab51">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/mkhXaqc.png"/>
+</div>
+<div id="tab52">
+<h1>The Healer's Hall</h1>
+<a target="_blank" href="https://i.imgur.com/7cpe2VW.png"><img align="left" style="width:43%;" src="https://i.imgur.com/7cpe2VW.png"/></a>
+<i>"A large, hallway shaped room intended to act as the school's medical ward. The hall is lined with various cots for the injured, as well as a large assortment of medical equipment, both traditional and magical. Healing chambers line the walls, allowing faith mages to better deal with serious medical situations. In a back room (kept locked by X) there resides a small number of resurrection tubes; magical contraptions used by faith mages to accelerate their power and bring the dead back to life. This will only work if the body has been brought to X, and it has a sufficient amount of magical energy left inside of it."</i>
+<br><br>
+This is X's place of work, where she spends the majority of her time. As Head Healer it is her duty to tend to students and staff alike when they are sick and/or injured. Understandably she takes this task very seriously, even going to the extreme to make sure it's always as sterile as a proper hospital. Not a speck of dust can be found anywhere, the Wisp is far too thorough with her broom.
+<br><br>
+<b>Healer's Hall Benefits:</b><br>
+<li>+2 bonus points for every healing post done in the ward!</i>
+<li>Ressurections can now be purchased! (Pm <a target="_blank" href="http://ulreich.chatango.com">"Ulreich"</a> for details)</li>
+<br>
+<b>New Healer's Hall Mechanic!:</b><br>
+The overall environment of the Healer’s Hall has recently changed. Its sterile walls and white equipment used to be completely barren, the only residents an occasional Ulreich University Participant in need of medical attention, or a Faith Mage that is loyally upkeeping the area and providing aid to those in need. Typically it was very empty and quiet, a lonely depressing space that was more of a hindrance to its caretakers than a blessing. This is the case no longer, new entities have happily made it their own: little spiritual beings known as Will-o’-the-Wisps. They can be found hovering about, snoozing within drawers and cabinets, perching on any flat surface not currently in use, filling the area with their ambient light hearted noises.
+<br>
+<i>Terms Of Use</i><br>
+Will-o’-the-Wisps are sentient and interactive, anyone is welcome to use them in their posts and effectively play them as NPCs. According to the rules on the Ulreich University Weebly NPCs usually require permission before use. This is not the case for Wisps as long as these simple rules are followed:
+<br>
+<li>Wisps may leave the Healer’s Hall ONLY if they are fetching an absent Faith Mage to help those in need. In these instances their journey will be implied rather than actually played out.</i>
+<li>Wisps are not malevolent nor do they possess any magic of their own. They do have some abilities as spirits in general, but the utilization of these is severely limited to only helpful gestures. Please do not misrepresent them if used, keep them true to their innocent helpful nature, and do not add to them as you see fit. </li>
+<li>Do not metagame. Having no reason to understand their visual language, what they are, their origin, and anything about them, but inserting your character into their lore anyway--especially without checking with me first--will have consequences.</li>
+<br>
+Exceptions to these rules are possible, but require permission from myself (primary account: Being) beforehand. 
+<br>
+<b>Reminder:</b> The only individual so far who has seen/read information about the Wisps is Kina Buvelle (<a target="_blank" href="http://ephemeral.chatango.com">Ephemeral</a>). All of the things talked about in this section are O.O.C. knowledge, not I.C. No one should automatically translate what they learn here to their character, the only place it’s written down where they could educate themselves is locked away. Learning about them will require interaction. For more in depth information about Wisps, their behavior, and appearances, see the "Wisp" tab.
+<br><br>
+Clicking on the floorplan picture will open a larger version in a new tab.
+</div>
+<div id="tab53">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/5bptNZt.png"/>
+</div>
+
+<div id="tab54">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/a4LyyER.png"/>
+</div>
+<div id="tab55">
+<h1>Dimensional Guardians</h1>
+Will-o’-the-Wisps began as a hivemind, each individual entity possessed no sentience of its own. They worked as subconscious extensions of the Control Center's (X's) own mind, while having ethereal presences distinctly different and separate from hers. During this stage, and for a good few after, their appearance was nothing more than glowing orbs of mystical ghostly energies that varied in color and communicated through a visual language that was carried out by flickering their light. As the controller adapted, as did the aspects under its power. Slowly but surely they became more akin to a beehive system, adopting their own sentience and capable of feeling desire--and some semblance of free will--while still answering to their Queen; it became a they, and they became a collective.
+<br><br>
+Now the Wisps have advanced further even beyond that, adapting personality traits either buried and bottled deep in their monarch or felt constantly at extreme degrees. Those personality traits become their identities, give them names, and even purposes in some cases.
+<br><br>
+<h1>Will-o'-the-Wisp Behavior</h1>
+Wisps are small spiritual entities that seem to be very innocent in their mannerisms. When faced with aggression they will simply scatter and leave the area or hide in unreachable places. Some may be mischievous enough to harmlessly prank other Healer’s Hall residents, but these antics never end in the legitimate physical injury. Above all their presence signifies a willingness to help. Wisps can be requested to perform basic tasks, and they will immediately and efficiently carry them out. While their strange visual language consisting of flickering lights cannot be deciphered by those that have not been taught, they do thoroughly understand Common, and any other verbal tongue the Wisp Queen (Head Healer) knows. Overall they are a cheerful bunch who only wish to make those around them comfortable, happy, and content.
+<br><br>
+While it isn’t a method of communication for them by any means, “Base” and “Fractal” Wisps (see Typings below) do produce a distinct ambient noise. It sounds like a chorus of sighs and laughter from disembodied children. Their ghostly nature often makes it hard to pinpoint one individual spirit as the source of the audible imprint, whenever they’re around it echos about the area almost as if it’s an aura. “Shiver” Wisps do not produce these ethereal sounds.
+<br><br>
+There are currently three different types of Will-o’-the-Wisp all present in the Healer’s Hall. Different subspecies are known as “Phases,” and each Phase has its own appearance and method of manipulating the world around them. Below I will present a reference image and a small summary of each individual Phase known so far.
+<br><br>
+<h1>"Basic" Wisp</h1>
+<img align="left" style="width:30%;" src="https://i.imgur.com/8zsJdij.png"/>
+In this state a Wisp’s use is very limited. They have no visible distinct humanoid features, appearing as ethereal orbs of varying colors that flicker much like a flame but produce no heat. This iteration is still cognitive, understanding Common and capable of carrying out commands, but they are noticeably “lazier” and less active than all their other Phase counterparts. They do not possess a visible body to communicate via body language, limiting them to only the foreign visual dialect of their people. 
+<br><br>
+Base Will-o’-the-Wisps are completely intangible which means they interact with the world around them through a method of pseudo-possession, the terms of which are as follows:
+Wisps have the capacity to possess inanimate non magic objects (and inanimate magic objects with the permission of the object’s owner). While possessing an object, they can manipulate it within reasonable limits of that object's capabilities (for example, hopping a table around for extremely short distances would be possible, but making said table grow new additions it did not have before would not be). Destroying or damaging a possessed item will in turn damage the Wisp manifesting within it. This may work in tandem with their ability to hover through the air as ghosts assuming the object isn’t heavy or large (or both).
+<br><br>
+<h1>Fractal</h1>
+<img align="left" style="width:30%;" src="https://i.imgur.com/ln1ollj.png"/>
+Their next stage, known as “Fractal,” has allowed the Wisps to adapt a more humanoid appearance. Dark shadows have gathered around their flame-like orbs into the generalized shapes of child silhouettes. Ethereal light--still producing no heat--flows out of the darkness in their chest (where their core is located) as well as where their eyes would be if they were truly physical beings, and from the tops of their heads in long flowing locks of hairlike formations. They come in a vast array of different colors, and despite still only communicating in a visual language they are still easier to talk to. Human-like silhouettes allow them to answer yes or no questions with nods and shake of the head, or motion signs out in the world around them.
+<br><br>
+Fractals are extremely active, and typically curious. They are likely to greet newcomers at the door and stay with patients at their cots, providing services whenever necessary. Proactive, attentive, and a bit mischievous, but ultimately a good willed bunch. These are the most common Phase of Wisp the average person will find in the Healer’s Hall. Being intangible forces them to interact with the world in the same way their Base Phase peers do. Refer to above (final paragraph of the Base Phase section) for limitations and exact information in their possession abilities. 
+<br><br>
+<h1>Shiver</h1>
+<img align="left" style="width:30%;" src="https://i.imgur.com/EfboWYc.png"/>
+Shiver Will-o’-the-Wisps are still spirits but are not passively intangible, they possess the capacity to interact with the physical world as any other average creature. Still small like children but fairly different in appearance from the two Phases before them. Their bodies are typically completely hidden under cloaks and cloth, causing the only visible glow to be a pair of glowing eyes shining under the pure darkness of a hood. Since it’s the only pseudo light source visible on them it’s the only part of their bodies they use to communicate with their fellow Wisps in their native visual language. (In case the reader still isn’t aware, the Will-o’-the-Wisp dialect manifests in flickering the brightness of the glow they produce)
+<br><br>
+While they can still become intangible at will, and use the same possession abilities shared among their kin, they often prefer to maintain solid shape. Limbs like arms and legs stick out from their heavily clothed forms, but end in stubs instead of hands and feet. Interestingly enough, objects still behave around the end of their limbs as if they did actually have fingers and toes that are simply invisible. While their attire and the glow in their eyes can be any color their bodies are always a dark lightless black. 
+Shivers do not produce the aforementioned ethereal sound of disembodied children, but they can grunt and groan. When making noise they are obviously the source, and one could swear they had mouths of their own, though no one would be able to tell for certain since their faces remain permanently hidden.
+These iterations are extremely rare, and while they are as proactive as Fractals they aren’t nearly as common. They’re also a bit more stubborn and are unlikely to respond to any inklings of negative attitude or disrespect.
+</div>
+<div id="tab56">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/njGnv9X.png"/>
+</div>
+
+<embed style="height: 0%; width: 0%;"src="X.mp3" autostart="true" loop="true">
